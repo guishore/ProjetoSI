@@ -18,24 +18,3 @@ $(".card-medium")
         right: "20px",
       });
   });
-
-$(document).ready(function () {
-
-  $("#profile-picture").each(function (index) {
-    $(this).css({
-      "margin-left": "calc(-" + $(this).width() / 2 + "px + 75px)",
-    });
-  });
-
-  $(".card-medium-image").each(function (index) {
-    $(this).css({
-      "margin-left": "calc(-" + $(this).width() / 2 + "px + 125px)",
-    });
-  });
-
-  $(".card-small-image").each(function (index) {
-    $(this).css({
-      "margin-left": "calc(-" + $(this).width() / 2 + "px + 92.5px)",
-    });
-  });
-});
