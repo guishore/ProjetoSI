@@ -1,0 +1,328 @@
+#highlighted-card {
+  width: 100%;
+  height: 650px;
+  background: white;
+  margin-bottom: 35px;
+  border-radius: 25px;
+}
+
+.card-large-image {
+  width: 100%;
+  height: auto;
+  margin-top: -200px;
+}
+
+.card-large-bottom {
+  width: 100%;
+  height: 40%;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  bottom: 0;
+}
+
+.card-large-bottom h2 {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 110px;
+  padding: 0px 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.card-large-bottom p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 50px;
+  margin: 0;
+  width: 40%;
+  position: absolute;
+  bottom: 70px;
+}
+
+.card-large-action-buttons {
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+  padding: 0;
+  margin: 0;
+  transition: all 50ms ease-in-out;
+}
+
+.card-large-action-buttons li {
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  background: white;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+}
+
+.card-large-action-buttons li img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-large-action-buttons li:nth-child(2) {
+  width: 160px;
+}
+
+.card-large-action-buttons li:nth-child(1) {
+  margin-right: 10px;
+}
+
+.card-large-action-buttons li:nth-child(1) img {
+  width: 13px;
+  padding-top: 9px;
+}
+
+.card-large-action-buttons li:nth-child(2) img {
+  width: 17px;
+  padding-top: 11px;
+  margin-left: 17px;
+}
+
+.card-large-action-buttons li:nth-child(2) span {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+
+/*=====================================*/
+
+.card-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  overflow-x: visible;
+}
+
+#card-grid {
+  margin: 0;
+  padding: 0;
+  overflow-x: visible;
+}
+
+#card-grid .card-medium {
+  margin-bottom: 35px;
+}
+
+.card-list-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-medium-image {
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-medium {
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  margin-right: 35px;
+}
+
+.card-medium-bottom {
+  width: 100%;
+  height: 120px;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+}
+
+.card-medium-bottom h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0px 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+  padding-right: 0;
+}
+
+.card-medium-bottom h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 25px;
+  margin: 0;
+}
+
+.card-medium-action-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  opacity: 0;
+  transition: all 50ms ease-in-out;
+}
+
+.card-medium-action-buttons li {
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  background: white;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+}
+
+.card-medium-action-buttons li img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-medium-action-buttons li:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.card-medium-action-buttons li:nth-child(1) img {
+  width: 13px;
+  padding-top: 9px;
+}
+
+.card-medium-action-buttons li:nth-child(2) img {
+  width: 17px;
+  padding-top: 11px;
+  margin-left: 8px;
+}
+
+.play-button {
+  padding-top: 10px !important;
+  margin-left: 12px !important;
+}
+
+.card-medium .discount * {
+  display: inline-block;
+}
+
+.card-medium .discount .oldprice {
+  text-decoration: line-through;
+  text-decoration-color: white;
+  text-decoration-thickness: 2px;
+  color: rgb(155, 155, 155);
+  padding-right: 5px;
+}
+
+.card-medium .discount .newprice {
+  padding: 0;
+}
+
+.card-medium .discount .percentage {
+  position: absolute;
+  top: -40px;
+  left: 25px;
+  padding: 5px 8px;
+  background: white;
+  color: #1e1e1e;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/*=====================================*/
+
+#card-grid .card-small {
+  margin-bottom: 35px;
+}
+
+.card-small-image {
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-small {
+  width: 185px;
+  height: 257px;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+.card-small-bottom {
+  width: 100%;
+  height: 85px;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(30px);
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+}
+
+.card-small-bottom h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0px 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card-small-bottom h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 25px;
+  margin: 0;
+}
+
+.card-small-action-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  opacity: 0;
+  transition: all 50ms ease-in-out;
+}
+
+.card-small-action-buttons li {
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  background: white;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+}
+
+.card-small-action-buttons li img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-small-action-buttons li img {
+  width: 13px;
+  padding-top: 9px;
+}

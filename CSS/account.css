@@ -1,0 +1,17 @@
+#profile-tab {
+  width: 30%;
+  height: 230px;
+  border-radius: 20px;
+  background-color: #313131;
+}
+
+#profile-tab #profile-picture-frame {
+  border-radius: 20px;
+  height: 230px;
+  width: 150px;
+  overflow: hidden;
+}
+
+#profile-tab #profile-picture {
+  height: 100%;
+}
