@@ -7,13 +7,36 @@ body {
   margin: 0;
 }
 
+/*=====================*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #313131;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+/*=====================*/
+
 #primary-area {
     position: absolute;
-    width: calc(100vw - 180px);
+    width: calc(100vw - 200px);
     margin: 60px 120px;
     padding-bottom: 25px;
 }
-
 
 #page-title {
   margin-top: -11px;
@@ -32,11 +55,12 @@ body {
   padding-left: 50px;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif !important;
+  border: none;
 }
 
 #search-bar-icon {
   position: absolute;
   width: 16px;
-  top: 96px;
+  top: 94px;
   left: 20px;
 }

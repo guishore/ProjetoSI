@@ -1,0 +1,47 @@
+#notification-tab {
+  position: fixed;
+  background: white;
+  border-radius: 25px;
+  z-index: 1;
+  width: 350px;
+  bottom: 130px;
+  left: 120px;
+  margin: 0;
+  padding: 40px;
+  list-style: none;
+  text-transform: uppercase;
+  color: #191919;
+  display: none;
+}
+
+#notification-tab h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#notification-tab li{
+    margin-top: 20px;
+}
+
+.notification-top-line {
+  font-size: 0;
+}
+
+.notification-top-line .notification-title {
+  display: inline-block;
+  width: 70%;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.notification-top-line .notification-date {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  font-size: 12px;
+}
+
+.notification-description {
+  font-size: 12px;
+}

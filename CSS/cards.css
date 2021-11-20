@@ -1,20 +1,20 @@
 #highlighted-card {
   width: 100%;
-  height: 650px;
+  height: 70vh;
   background: white;
   margin-bottom: 35px;
   border-radius: 25px;
 }
 
 .card-large-image {
-  width: 100%;
-  height: auto;
-  margin-top: -200px;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
 
 .card-large-bottom {
   width: 100%;
-  height: 40%;
+  height: 260px;
   background: rgba(30, 30, 30, 0.6);
   backdrop-filter: blur(30px);
   position: absolute;
@@ -166,6 +166,7 @@
   margin-bottom: 10px;
   width: 150px;
   padding-right: 0;
+  letter-spacing: 0.5px;
 }
 
 .card-medium-bottom h4 {

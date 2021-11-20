@@ -5,6 +5,7 @@
     <title>Homepage</title>
 
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/notifications.css">
     <link rel="stylesheet" href="CSS/cards.css">
     <link rel="stylesheet" href="CSS/menu-bar.css">
 
@@ -23,7 +24,8 @@
         });
     </script>
 
-    <?php include("menu-bar.php"); ?>
+    <?php include("PARTS/menu-bar.php"); ?>
+    <?php include("PARTS/notification-tab.php"); ?>
 
     <div id="primary-area">
 
@@ -118,6 +120,7 @@
         </ul>
 
         <script src="JS/cards.js"></script>
+        <script src="JS/notifications.js"></script>
 
     </div>
 
