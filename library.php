@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Homepage</title>
+    <title>LDMovies | My Library</title>
 
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/notifications.css">
