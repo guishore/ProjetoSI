@@ -18,7 +18,12 @@
 
         <ul id="shopping-list">
 
-            <li></li>
+            <h2>Shopping List</h2>
+
+            <li>
+                <div class="shopping-list-image-frame"><img src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster"></div>
+                <h3>Title</h3>
+            </li>
 
         </ul>
 
@@ -54,6 +59,7 @@
         </div>
 
         <script src="JS/notifications.js"></script>
+        <script src="JS/main.js"></script>
 
     </div>
 

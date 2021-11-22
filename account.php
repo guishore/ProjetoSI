@@ -119,6 +119,7 @@
 
         <script src="JS/cards.js"></script>
         <script src="JS/notifications.js"></script>
+        <script src="JS/main.js"></script>
 
     </div>
 

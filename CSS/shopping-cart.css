@@ -14,6 +14,34 @@
   display: inline-block;
 }
 
+#shopping-list h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  margin: 35px;
+}
+
+#shopping-list li {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+#shopping-list .shopping-list-image-frame {
+  width: 70px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#shopping-list .shopping-list-image-frame img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+/*============================*/
+
 #order-summary {
   display: inline-block;
   width: 35%;
@@ -42,8 +70,8 @@
 }
 
 #order-list::-webkit-scrollbar {
-    width: 0;
-  }
+  width: 0;
+}
 
 #order-list li {
   font-size: 0;
@@ -108,9 +136,9 @@ button {
 }
 
 #order-buttons button:first-child {
-    width: 50%;
-    color: white;
-    background: #989898;
+  width: 50%;
+  color: white;
+  background: #989898;
 }
 
 #order-buttons button:last-child {
