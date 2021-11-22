@@ -3,8 +3,8 @@
 
 <head>
     <title>LDMovies | Account</title>
-    <link rel="stylesheet" href="CSS/account.css">
     <?php include("PARTS/head-tag.php"); ?>
+    <link rel="stylesheet" href="CSS/account.css">
 </head>
 
 <body>

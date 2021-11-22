@@ -1,0 +1,124 @@
+#primary-area {
+  height: calc(100% - 120px);
+  padding: 0;
+  font-size: 0;
+}
+
+#shopping-list {
+  width: 60%;
+  height: calc(100% - 84px);
+  margin: 0;
+  padding: 0;
+  background: #313131;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+#order-summary {
+  display: inline-block;
+  width: 35%;
+  margin-left: 5%;
+  background: #313131;
+  border-radius: 20px;
+  float: right;
+}
+
+#order-summary h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin: 35px 0;
+}
+
+#order-list {
+  padding: 0;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+
+#order-list::-webkit-scrollbar {
+    width: 0;
+  }
+
+#order-list li {
+  font-size: 0;
+}
+
+#order-list .order-left {
+  display: inline-block;
+  width: 70%;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 7px 0;
+}
+
+#order-list .order-right {
+  display: inline-block;
+  width: 30%;
+  font-size: 14px;
+  text-align: right;
+  margin: 7px 0;
+}
+
+#order-summary #order-total {
+  font-size: 0;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#order-total h3 {
+  display: inline-block;
+  width: 50%;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 50px;
+}
+
+#order-total h3:last-child {
+  text-align: right;
+}
+
+button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #313131;
+  background-color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+#order-buttons {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+#order-buttons button:first-child {
+    width: 50%;
+    color: white;
+    background: #989898;
+}
+
+#order-buttons button:last-child {
+  margin-left: 5%;
+  width: 45%;
+}
+
+#order-buttons button img {
+  width: 10px;
+  margin-right: 8px;
+}
