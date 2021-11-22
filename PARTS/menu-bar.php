@@ -11,7 +11,7 @@
             <div id="current-balance-tag">90.90€</div>
         </li>
         <li><a href="#"><img src="IMAGES/ICONS/cart-white.svg" alt="Shopping Cart Icon"></a></li>
-        <li><a href="#"><img id="notification-icon" src="IMAGES/ICONS/bell-white.svg" alt="Notification Icon"></a></li>
+        <li><a><img id="notification-icon" src="IMAGES/ICONS/bell-white.svg" alt="Notification Icon"></a></li>
         <li><a href="account.php"><img id="account-icon" src="IMAGES/ICONS/user-white.svg" alt="Account Icon"></a></li>
     </ul>
 </header>

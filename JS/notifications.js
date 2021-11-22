@@ -1,3 +1,6 @@
+document.getElementById("notification-icon").src = "IMAGES/ICONS/bell-unread-white.svg";
+
+
 $("#notification-icon").click(function() {
 
     $("#notification-tab").toggleClass("notification-tab-open");
