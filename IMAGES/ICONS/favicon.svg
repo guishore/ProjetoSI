@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+    <style>
+		.cls-12 {
+			fill: #191919;
+		}
+		@media ( prefers-color-scheme: dark ) {
+			.cls-12 {
+				fill: #fff;
+			}
+		}
+	</style>
+    <path class="cls-12" d="M6,15v3h8V11H6ZM4,13V11H2V9H4V7H2v6Zm0,2H2v1a2,2,0,0,0,2,2Zm14-2V7H16V9h2v2H16v2Zm0,2H16v3a2,2,0,0,0,2-2ZM14,7V2H6V9h8Zm4-2V4a2,2,0,0,0-2-2V5ZM4,5V2A2,2,0,0,0,2,4V5ZM4,0H16a4,4,0,0,1,4,4V16a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z"/>
+</g></g></svg>

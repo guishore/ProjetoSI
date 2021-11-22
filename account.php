@@ -3,18 +3,8 @@
 
 <head>
     <title>LDMovies | Account</title>
-
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/notifications.css">
-    <link rel="stylesheet" href="CSS/cards.css">
-    <link rel="stylesheet" href="CSS/menu-bar.css">
     <link rel="stylesheet" href="CSS/account.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <?php include("PARTS/head-tag.php"); ?>
 </head>
 
 <body>
@@ -88,7 +78,42 @@
 
             </div>
 
-            <div id="friend-list"></div>
+            <div id="friend-list">
+
+                <div id="friend-list-top-line">
+                    <h2>Friend List</h2>
+                    <button><img src="IMAGES/ICONS/user-plus-dark.svg" alt=""> Add Friend</button>
+                </div>
+
+                <ul id="card-grid">
+
+                    <li class="card card-medium">
+                        <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                        <div class="card-item card-medium-bottom">
+                            <h3>Joker</h3>
+                            <h3 style="display: none;">Joaquin Phoenix, Robert De Niro</h3>
+                        </div>
+                    </li>
+
+                    <li class="card card-medium">
+                        <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                        <div class="card-item card-medium-bottom">
+                            <h3>The French Dispatch</h3>
+                            <h3 style="display: none;">Timothée Chalamet, Tilda Swinton, Bill Murray</h3>
+                        </div>
+                    </li>
+
+                    <li class="card card-medium">
+                        <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                        <div class="card-item card-medium-bottom">
+                            <h3>The French Dispatch</h3>
+                            <h3 style="display: none;">Timothée Chalamet, Tilda Swinton, Bill Murray</h3>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 

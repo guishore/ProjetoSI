@@ -12,6 +12,12 @@
   text-transform: uppercase;
   color: #191919;
   display: none;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+#notification-tab::-webkit-scrollbar {
+  width: 0;
 }
 
 #notification-tab h2 {
