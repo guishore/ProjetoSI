@@ -20,6 +20,7 @@
   margin-left: 5%;
   margin-right: 5%;
   font-size: 0;
+  margin-bottom: 20px;
 }
 
 #line-list .line-list-image-frame {
@@ -45,15 +46,41 @@
 }
 
 #line-list .line-list-top-line h3 {
-  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 15px;
   font-size: 20px;
+}
+
+#line-list .line-list-top-line .line-list-title {
+  display: inline-block;
   color: white;
-  width: 50%;
+  width: calc(100% - 160px);
   text-transform: uppercase;
   margin-top: 10px;
 }
-#line-list .line-list-top-line h3:last-child {
+
+#line-list .line-list-top-line .line-list-price,
+#line-list .line-list-top-line .line-list-price-discount {
+  display: inline-block;
+  color: white;
+  width: 160px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 0;
   text-align: right;
+}
+
+#line-list .line-list-top-line .line-list-price-discount h3 {
+  display: inline-block;
+  text-align: right;
+}
+
+#line-list .line-list-top-line .line-list-price-discount h3:first-child {
+  text-decoration: line-through;
+  text-decoration-color: white;
+  text-decoration-thickness: 2px;
+  color: rgb(155, 155, 155);
+  padding-right: 10px;
 }
 
 #line-list .line-list-action-buttons {

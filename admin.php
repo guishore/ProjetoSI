@@ -26,9 +26,29 @@
                 <div class="line-list-image-frame"><img src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster"></div>
                 <div class="line-list-right-section">
                     <div class="line-list-top-line">
-                        <h3>Joker</h3>
+                        <h3 class="line-list-title">Joker</h3>
                         <h3 style="display: none;">Joaquin Phoenix, Robert De Niro</h3>
-                        <h3>14.99</h3>
+                        <div class="line-list-price">
+                            <h3>14.99</h3>
+                        </div>
+                    </div>
+                    <ul class="line-list-action-buttons">
+                        <li class="line-list-edit-button"><img src="IMAGES/ICONS/pencil-dark.svg" alt="Edit Icon"></li>
+                        <li class="line-list-delete-button"><img src="IMAGES/ICONS/trash-white.svg" alt="Delete Icon"><span>Add to cart</span></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="line-list-item">
+                <div class="line-list-image-frame"><img src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster"></div>
+                <div class="line-list-right-section">
+                    <div class="line-list-top-line">
+                        <h3 class="line-list-title">The French Dispatch</h3>
+                        <h3 style="display: none;">Timothée Chalamet, Tilda Swinton, Bill Murray</h3>
+                        <div class="line-list-price-discount">
+                            <h3 class="line-list-discounted-price">14.99€</h3>
+                            <h3 class="line-list-current-price">8.99€</h3>
+                        </div>
                     </div>
                     <ul class="line-list-action-buttons">
                         <li class="line-list-edit-button"><img src="IMAGES/ICONS/pencil-dark.svg" alt="Edit Icon"></li>

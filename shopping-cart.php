@@ -20,12 +20,17 @@
 
             <h2>Shopping List</h2>
 
-            <li>
-                <div class="line-list-image-frame"><img src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster"></div>
+            
+            <li class="line-list-item">
+                <div class="line-list-image-frame"><img src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster"></div>
                 <div class="line-list-right-section">
                     <div class="line-list-top-line">
-                        <h3>Title</h3>
-                        <h3>14.99</h3>
+                        <h3 class="line-list-title">The French Dispatch</h3>
+                        <h3 style="display: none;">Timothée Chalamet, Tilda Swinton, Bill Murray</h3>
+                        <div class="line-list-price-discount">
+                            <h3 class="line-list-discounted-price">14.99€</h3>
+                            <h3 class="line-list-current-price">8.99€</h3>
+                        </div>
                     </div>
                     <ul class="line-list-action-buttons">
                         <li class="line-list-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"><span>Add to cart</span></li>
