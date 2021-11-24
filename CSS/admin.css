@@ -1,0 +1,22 @@
+#primary-area {
+  height: calc(100% - 120px);
+  padding: 0;
+  font-size: 0;
+}
+
+#myInput {
+  width: 85%;
+  margin: 0 5%;
+  margin-bottom: 35px;
+}
+
+#line-list .line-list-action-buttons .line-list-delete-button {
+  background: #e94c4c !important;
+}
+
+#search-bar-icon {
+    position: absolute;
+    width: 16px;
+    top: 188px;
+    left: 70px;
+  }

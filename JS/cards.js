@@ -9,6 +9,7 @@ $(".card-medium")
         right: "25px",
       });
   })
+
   .mouseout(function () {
     $(this)
       .children(".card-medium-bottom")
@@ -18,3 +19,5 @@ $(".card-medium")
         right: "20px",
       });
   });
+
+/*===================================*/

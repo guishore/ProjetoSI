@@ -1,0 +1,82 @@
+#line-list {
+  width: 60%;
+  height: calc(100% - 84px);
+  margin: 0;
+  padding: 0;
+  background: #313131;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+#line-list h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  margin: 35px 5%;
+}
+
+#line-list li {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 0;
+}
+
+#line-list .line-list-image-frame {
+  width: 70px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#line-list .line-list-image-frame img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+#line-list .line-list-right-section {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+  margin-left: 3%;
+  width: calc(97% - 70px);
+}
+
+#line-list .line-list-top-line h3 {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+#line-list .line-list-top-line h3:last-child {
+  text-align: right;
+}
+
+#line-list .line-list-action-buttons {
+  padding: 0;
+  width: calc(97% - 70px);
+}
+
+#line-list .line-list-action-buttons li {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#line-list .line-list-action-buttons li img {
+  width: 13px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8px;
+}

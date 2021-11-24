@@ -104,8 +104,14 @@
 .card-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
-  overflow-x: visible;
+  padding-bottom: 35px;
+  height: 417px;
+  overflow-x: scroll;
+  width: max-content;
+}
+
+.card-list::-webkit-scrollbar {
+  height: 0px;
 }
 
 #card-grid {
@@ -134,10 +140,17 @@
   cursor: pointer;
 }
 
-.card-medium-image {
+.card-medium-image,
+.card-medium-gif {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  position: absolute;
+}
+
+.card-medium-image {
+  transition: opacity 100ms ease-in-out;
+  transition-delay: 250ms;
 }
 
 .card-medium {
@@ -145,6 +158,16 @@
   height: 350px;
   border-radius: 25px;
   margin-right: 35px;
+  transition: width 100ms ease-in-out;
+  transition-delay: 250ms;
+}
+
+.card-list .card-medium:hover {
+  width: 400px;
+}
+
+.card-list .card-medium:hover .card-medium-image {
+  opacity: 0;
 }
 
 .card-medium-bottom {
@@ -183,7 +206,7 @@
   right: 20px;
   padding: 0;
   opacity: 0;
-  transition: all 50ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .card-medium-action-buttons li {

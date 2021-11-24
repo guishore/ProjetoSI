@@ -16,13 +16,21 @@
 
         <h1 id="page-title">Shopping Cart</h1>
 
-        <ul id="shopping-list">
+        <ul id="line-list">
 
             <h2>Shopping List</h2>
 
             <li>
-                <div class="shopping-list-image-frame"><img src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster"></div>
-                <h3>Title</h3>
+                <div class="line-list-image-frame"><img src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster"></div>
+                <div class="line-list-right-section">
+                    <div class="line-list-top-line">
+                        <h3>Title</h3>
+                        <h3>14.99</h3>
+                    </div>
+                    <ul class="line-list-action-buttons">
+                        <li class="line-list-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"><span>Add to cart</span></li>
+                    </ul>
+                </div>
             </li>
 
         </ul>

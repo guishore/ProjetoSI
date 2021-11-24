@@ -39,18 +39,6 @@
                 <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
                 <div class="card-item card-medium-bottom">
                     <h3>The French Dispatch</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-full-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>The French Dispatch</h3>
                     <div class="discount">
                         <h4 class="percentage">40% Off</h4>
                         <h4 class="oldprice">14.99€</h4>

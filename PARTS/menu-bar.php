@@ -5,6 +5,7 @@
         <li onclick="menuclick('library.php')"><img id="library-icon" src="IMAGES/ICONS/folder-white.svg" alt="Library Icon"></li>
         <li onclick="menuclick('wishlist.php')"><img id="wishlist-icon" src="IMAGES/ICONS/bookmark-white.svg" alt="Wishlist Icon"></li>
         <li onclick="menuclick('search.php')"><img id="search-icon" src="IMAGES/ICONS/search-white.svg" alt="Search Icon"></li>
+        <li onclick="menuclick('admin.php')"><img id="admin-icon" src="IMAGES/ICONS/admin.svg" alt="Admin Icon"></li>
     </ul>
     <ul id="bottom-section">
         <li>

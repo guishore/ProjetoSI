@@ -43,6 +43,10 @@
   width: 28px;
 }
 
+#menu-bar ul li:nth-child(6) img {
+  width: 48px;
+}
+
 #menu-bar #bottom-section {
   position: absolute;
   width: 100%;
