@@ -15,7 +15,7 @@
 
         <h1 id="page-title">Search</h1>
 
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search"><img id="search-bar-icon" src="IMAGES/ICONS/search-dark.svg" alt="Search Icon">
+        <div id="search-bar"><div id="search-bar"> <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search"><img id="search-bar-icon" src="IMAGES/ICONS/search-dark.svg" alt="Search Icon"> </div>
 
         <ul id="card-grid">
 

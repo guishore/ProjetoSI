@@ -56,15 +56,34 @@ body {
   width: 500px;
   border-radius: 5px;
   margin-bottom: 35px;
-  padding-left: 50px;
+  padding-left: 45px;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif !important;
   border: none;
 }
 
+#search-bar {
+  position: relative;
+}
+
 #search-bar-icon {
   position: absolute;
   width: 16px;
-  top: 94px;
-  left: 20px;
+  top: 10px;
+  left: 15px;
+}
+
+button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #313131;
+  background-color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
 }

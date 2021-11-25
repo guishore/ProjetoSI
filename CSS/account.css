@@ -8,21 +8,6 @@
   width: 100%;
 }
 
-button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #313131;
-  background-color: white;
-  padding: 7px 15px;
-  border-radius: 5px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  height: 35px;
-  border: none;
-  cursor: pointer;
-}
-
 #profile-balance-side {
   width: 30%;
   height: 100%;
@@ -200,13 +185,13 @@ button {
 
 #friend-list {
   display: inline-block;
-  width: calc(65% - 90px);
-  height: calc(100% - 90px);
+  width: calc(65% - 100px);
+  height: calc(100% - 100px);
   margin-left: 5%;
   border-radius: 20px;
   background-color: #313131;
   position: relative;
-  padding: 45px;
+  padding: 50px;
 }
 
 #friend-list-top-line {

@@ -18,7 +18,7 @@
   text-transform: uppercase;
   color: white;
   text-align: center;
-  margin: 35px 0;
+  margin: 50px 0;
 }
 
 #order-list {
@@ -69,31 +69,18 @@
   text-transform: uppercase;
   color: white;
   margin-top: 50px;
+  margin-bottom: 0;
 }
 
 #order-total h3:last-child {
   text-align: right;
 }
 
-button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #313131;
-  background-color: white;
-  padding: 7px 15px;
-  border-radius: 5px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  height: 35px;
-  border: none;
-  cursor: pointer;
-}
-
 #order-buttons {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
