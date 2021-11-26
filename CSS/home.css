@@ -1,0 +1,4 @@
+.card-medium-action-buttons {
+    transition: all 100ms ease-in-out;
+    transition-delay: 250ms;
+  }

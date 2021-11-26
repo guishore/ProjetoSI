@@ -1,0 +1,86 @@
+#myInput {
+  height: 35px;
+  width: 500px;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  padding-left: 45px;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif !important;
+  border: none;
+}
+
+#search-bar {
+  position: relative;
+}
+
+#search-bar-icon {
+  position: absolute;
+  width: 16px;
+  top: 10px;
+  left: 15px;
+}
+
+#search-bar button img {
+  margin-left: 5px;
+  width: 10px;
+}
+
+#search-bar button {
+  height: 37px;
+  margin-left: 10px;
+}
+
+#search-bar #category-button {
+  width: 142px;
+}
+
+#search-bar #rating-button {
+  width: 118px;
+}
+
+#search-bar #category-list {
+  background: white;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 142px;
+  position: absolute;
+  left: 561px;
+  top: 45px;
+  display: none;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+#search-bar #rating-list {
+  background: white;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 118px;
+  position: absolute;
+  left: 716px;
+  top: 45px;
+  display: none;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+#search-bar #category-list li,
+#search-bar #rating-list li {
+  color: #191919;
+  cursor: pointer;
+  width: calc(100% - 20px);
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#search-bar #category-list li:hover,
+#search-bar #rating-list li:hover {
+  background: lightgray;
+}

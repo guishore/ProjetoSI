@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="CSS/cards.css">
 <link rel="stylesheet" href="CSS/lines.css">
 <link rel="stylesheet" href="CSS/menu-bar.css">
+<link rel="stylesheet" href="CSS/search-bar.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -62,17 +62,6 @@ body {
   border: none;
 }
 
-#search-bar {
-  position: relative;
-}
-
-#search-bar-icon {
-  position: absolute;
-  width: 16px;
-  top: 10px;
-  left: 15px;
-}
-
 button {
   text-decoration: none;
   text-transform: uppercase;

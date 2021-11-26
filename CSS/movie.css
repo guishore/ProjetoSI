@@ -1,0 +1,78 @@
+#primary-area {
+  padding-bottom: 36px;
+}
+
+#highlighted-card {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background: white;
+  margin-bottom: 35px;
+  border-radius: 25px;
+}
+
+#comment-section {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+#comment-section h3 {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.comment {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #313131;
+  font-size: 0;
+  margin-top: 35px;
+}
+
+.comment .profile-picture {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.comment .profile-picture img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.comment .comment-right-section {
+  display: inline-block;
+  margin-left: 3%;
+  width: calc(97% - 150px);
+  vertical-align: top;
+}
+
+.comment .comment-top-line {
+  color: white;
+  padding-top: 40px;
+}
+
+.comment .comment-top-line h3 {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.comment .comment-top-line h4 {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.comment .comment-text {
+  color: white;
+  font-size: 14px;
+}

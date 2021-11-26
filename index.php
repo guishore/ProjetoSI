@@ -4,6 +4,7 @@
 <head>
     <title>LDMovies | Home</title>
     <?php include("PARTS/head-tag.php"); ?>
+    <link rel="stylesheet" href="CSS/home.css">
 </head>
 
 <body>
@@ -19,13 +20,13 @@
 
     <div id="primary-area">
 
-        <div id="highlighted-card" class="card">
+        <div id="highlighted-card" class="card" onclick="menuclick('movie.php')">
             <img class="card-large-image" src="IMAGES/MOVIES/Inception.jpg" alt="Movie Poster">
             <div class="card-large-bottom">
                 <h2>Inception</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
 
-                <!--<h3>14.99€</h3>-->
+                <h3>14.99€</h3>
                 <ul class="card-large-action-buttons">
                     <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
                     <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"><span>Add to cart</span></li>
