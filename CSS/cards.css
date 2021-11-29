@@ -1,21 +1,22 @@
 #highlighted-card {
   width: 100%;
   height: 70vh;
-  background: white;
   margin-bottom: 35px;
   border-radius: 25px;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-large-image {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  border-radius: 27px;
 }
 
 .card-large-bottom {
   width: 100%;
   height: 260px;
-  background: rgba(30, 30, 30, 0.6);
+  background: rgba(30, 30, 30, 0.5);
   backdrop-filter: blur(30px);
   position: absolute;
   bottom: 0;
@@ -31,6 +32,7 @@
   margin-top: 50px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .card-large-bottom h3 {
@@ -53,6 +55,7 @@
   width: 40%;
   position: absolute;
   bottom: 70px;
+  text-align: justify;
 }
 
 .card-large-action-buttons {
@@ -119,6 +122,15 @@
   height: 417px;
   overflow-x: scroll;
   width: max-content;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.card-list ul {
+  padding: 0;
+  margin: 0;
+  transition: margin-left 500ms ease-in-out;
+  overflow-y: hidden;
 }
 
 .card-list::-webkit-scrollbar {
@@ -149,10 +161,11 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-medium-image,
-.card-medium-gif {
+.card-medium-video {
   width: inherit;
   height: inherit;
   object-fit: cover;
@@ -160,8 +173,7 @@
 }
 
 .card-medium-image {
-  transition: opacity 100ms ease-in-out;
-  transition-delay: 250ms;
+  border-radius: 27px;
 }
 
 .card-medium {
@@ -169,7 +181,7 @@
   height: 350px;
   border-radius: 25px;
   margin-right: 35px;
-  transition: width 100ms ease-in-out;
+  transition: width 200ms ease-in-out;
   transition-delay: 250ms;
 }
 
@@ -177,14 +189,16 @@
   width: 400px;
 }
 
-.card-list .card-medium:hover .card-medium-image {
+.card-medium-video {
   opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  transition-delay: 250ms;
 }
 
 .card-medium-bottom {
   width: 100%;
   height: 120px;
-  background: rgba(30, 30, 30, 0.6);
+  background: rgba(30, 30, 30, 0.5);
   backdrop-filter: blur(30px);
   position: absolute;
   bottom: 0;
@@ -211,13 +225,17 @@
   margin: 0;
 }
 
+.card-medium:hover .card-medium-action-buttons {
+  opacity: 1;
+}
+
 .card-medium-action-buttons {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 25px;
   padding: 0;
   opacity: 0;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .card-medium-action-buttons li {
@@ -284,6 +302,37 @@
   font-weight: 700;
 }
 
+.card-list .card-list-previous-button,
+.card-list .card-list-next-button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 200px;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card-list .card-list-previous-button {
+  left: 20px;
+  display: none;
+}
+
+.card-list .card-list-next-button {
+  left: calc(100vw - 200px - 60px);
+}
+
+.card-list .card-list-previous-button img,
+.card-list .card-list-next-button img {
+  width: 13px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 14px;
+}
+
 /*=====================================*/
 
 #card-grid .card-small {
@@ -307,7 +356,7 @@
 .card-small-bottom {
   width: 100%;
   height: 85px;
-  background: rgba(30, 30, 30, 0.6);
+  background: rgba(30, 30, 30, 0.5);
   backdrop-filter: blur(30px);
   position: absolute;
   bottom: 0;

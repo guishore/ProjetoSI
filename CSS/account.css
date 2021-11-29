@@ -10,7 +10,7 @@
 }
 
 #account-section {
-  width: 30%;
+  width: 32%;
   height: 100%;
   display: inline-block;
   vertical-align: top;
@@ -23,6 +23,7 @@
   background-color: #313131;
   position: relative;
   overflow-x: hidden;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 #profile-tab #profile-picture-frame {
@@ -82,11 +83,22 @@
   margin-right: 8px;
 }
 
-#empty-tab {
+#echievements-tab {
   background: #313131;
   border-radius: 20px;
   margin-top: 30px;
-  height: calc(100% - 250px - 150px);
+  height: calc(100% - 250px - 150px - 100px);
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  padding: 50px;
+}
+
+#echievements-tab h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  color: white;
+  margin-top: 0;
 }
 
 /*====================*/
@@ -94,11 +106,13 @@
 #logout-button {
   width: 100%;
   margin-top: 20px;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 #settings-button {
   width: 100%;
   margin-top: 30px;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 #logout-button img {
@@ -116,30 +130,31 @@
 /*====================*/
 
 #balance-tab {
-  margin-left: 5%;
-  width: 30%;
+  margin-left: 2%;
+  width: calc(32% - 100px);
   height: calc(100% - 50px);
   border-radius: 20px;
   background-color: #313131;
   margin-bottom: 40px;
   color: white;
-  padding-top: 50px;
+  padding: 50px;
+  padding-bottom: 0;
   overflow-y: hidden;
   display: inline-block;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 #balance-tab h2 {
-  font-weight: 500;
-  font-size: 52px;
+  font-size: 60px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 50px;
   width: fit-content;
+  letter-spacing: 2px;
 }
 
 #balance-tab h3 {
-  font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
   margin-right: auto;
@@ -150,18 +165,26 @@
 }
 
 #balance-buttons {
-  width: fit-content;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#balance-buttons button {
-  margin: 0 10px;
+  margin-bottom: 30px;
 }
 
 #balance-buttons button img {
   width: 10px;
   margin-right: 8px;
+}
+
+#balance-buttons button:nth-child(1) {
+  width: 40%;
+}
+
+#balance-buttons button:nth-child(2) {
+  width: 32%;
+  margin-left: 2%;
+}
+
+#balance-buttons button:nth-child(3) {
+  width: 24%;
+  margin-left: 2%;
 }
 
 /*====================*/
@@ -172,15 +195,20 @@
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
-  width: 77%;
-  height: calc(100% - 251px);
+  width: 100%;
+  height: calc(100% - 252px);
   overflow-y: scroll;
+}
+
+#latest-transactions::-webkit-scrollbar {
+  width: 0;
 }
 
 #latest-transactions h4 {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 0.5px;
+  margin-top: 0;
 }
 
 #latest-transactions li {
@@ -217,19 +245,42 @@
 #friend-list {
   vertical-align: top;
   display: inline-block;
-  width: calc(30% - 100px);
-  height: calc(100% - 100px);
-  margin-left: 5%;
+  width: 32%;
+  height: 100%;
+  margin-left: 2%;
   border-radius: 20px;
   background-color: #313131;
   position: relative;
-  padding: 50px;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  font-size: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+#friend-list ul {
+  padding: 0;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: calc(100% - 100px);
+  height: calc(100% - 120px);
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+#friend-list::-webkit-scrollbar {
+  width: 0;
+}
+
+#friend-list ul::-webkit-scrollbar {
+  width: 0;
 }
 
 #friend-list-top-line {
   font-size: 0;
-  width: 100%;
+  width: calc(100% - 100px);
   height: 35px;
+  margin: 50px;
   margin-bottom: 35px;
 }
 
@@ -251,10 +302,112 @@
 #friend-list button img {
   display: inline-block;
   width: 18px;
-  margin-right: 8px;
+  margin-right: 5px;
   margin-bottom: -4px;
 }
 
-.card {
-  cursor: default;
+#friend-list li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#friend-list .friend-image-frame {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#friend-list .friend-image-frame img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+#friend-list .friend-right-section {
+  width: calc(100% - 80px -20px);
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+#friend-list h3 {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+
+#friend-list .friend-currently-watching-icon {
+  width: 10px;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+#friend-list .friend-currently-watching-tag {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 2px;
+  letter-spacing: 0.4px;
+}
+
+#friend-list .friend-currently-watching {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 17px;
+}
+
+#friend-list li:hover .friend-delete-button {
+  opacity: 1;
+}
+
+#friend-list .friend-delete-button {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+#friend-list .friend-delete-button img {
+  width: 13px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8px;
+}
+
+#add-friend-tab {
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  right: -100%;
+  transition: right 400ms ease-in-out;
+}
+
+#add-friend-tab #search-bar {
+  margin: 50px;
+  width: calc(100% - 100px);
+}
+
+#add-friend-tab #search-bar #myInput {
+  width: calc(100% - 47px);
 }

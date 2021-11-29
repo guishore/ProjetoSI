@@ -36,7 +36,11 @@
                     </div>
                 </div>
 
-                <div id="empty-tab"></div>
+                <div id="echievements-tab">
+
+                    <h2>Achievements</h2>
+
+                </div>
 
                 <a href=""><button id="settings-button"><img src="IMAGES/ICONS/settings-dark.svg" alt="Edit Icon">Settings</button></a>
                 <a href=""><button id="logout-button"><img src="IMAGES/ICONS/logout-dark.svg" alt="Edit Icon">Logout</button></a>
@@ -104,6 +108,53 @@
                         </div>
                         <div class="transaction-date">10/11/2021</div>
                     </li>
+                    <li>
+                        <div class="transaction-top-line">
+                            <div class="transaction-title">Send</div>
+                            <div class="transaction-value">10€</div>
+                        </div>
+                        <div class="transaction-date">10/11/2021</div>
+                    </li>
+
+                    <li>
+                        <div class="transaction-top-line">
+                            <div class="transaction-title">Send</div>
+                            <div class="transaction-value">10€</div>
+                        </div>
+                        <div class="transaction-date">10/11/2021</div>
+                    </li>
+
+                    <li>
+                        <div class="transaction-top-line">
+                            <div class="transaction-title">Send</div>
+                            <div class="transaction-value">10€</div>
+                        </div>
+                        <div class="transaction-date">10/11/2021</div>
+                    </li>
+
+                    <li>
+                        <div class="transaction-top-line">
+                            <div class="transaction-title">Send</div>
+                            <div class="transaction-value">10€</div>
+                        </div>
+                        <div class="transaction-date">10/11/2021</div>
+                    </li>
+
+                    <li>
+                        <div class="transaction-top-line">
+                            <div class="transaction-title">Send</div>
+                            <div class="transaction-value">10€</div>
+                        </div>
+                        <div class="transaction-date">10/11/2021</div>
+                    </li>
+
+                    <li>
+                        <div class="transaction-top-line">
+                            <div class="transaction-title">Send</div>
+                            <div class="transaction-value">10€</div>
+                        </div>
+                        <div class="transaction-date">10/11/2021</div>
+                    </li>
 
                 </ul>
 
@@ -113,11 +164,120 @@
             <div id="friend-list">
 
                 <div id="friend-list-top-line">
-                    <h2>Friend List</h2>
-                    <button><img src="IMAGES/ICONS/user-plus-dark.svg" alt=""> Add Friend</button>
+                    <h2>Following</h2>
+                    <button onclick="addFriendTabButton()"><img src="IMAGES/ICONS/user-plus-dark.svg" alt=""> Follow</button>
                 </div>
 
+                <ul>
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Currently Watching</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
 
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Currently Watching</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
+
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Last Watched</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
+
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Last Watched</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Currently Watching</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
+
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Currently Watching</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
+
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Last Watched</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
+
+                    <li>
+                        <div class="friend-image-frame">
+                            <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="friend-right-section">
+                            <h3>Name</h3>
+                            <img class="friend-currently-watching-icon" src="IMAGES/ICONS/camera-white.svg" alt="Camera Icon">
+                            <h4 class="friend-currently-watching-tag">Last Watched</h4>
+                            <h4 class="friend-currently-watching">Movie Title</h4>
+                        </div>
+                        <div class="friend-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                    </li>
+                </ul>
+
+                <div id="add-friend-tab">
+                    <div id="search-bar">
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search"><img id="search-bar-icon" src="IMAGES/ICONS/search-dark.svg" alt="Search Icon">
+                    </div>
+                </div>
 
             </div>
 

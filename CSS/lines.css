@@ -1,16 +1,24 @@
 #line-list {
-  width: calc(60% - 100px);
-  height: calc(100% - 84px - 100px);
+  width: calc(66% - 100px);
+  height: calc(100% - 84px - 50px);
   margin: 0;
   padding: 50px;
+  padding-bottom: 0;
   background: #313131;
   border-radius: 20px;
   display: inline-block;
   overflow-x: hidden;
-  overflow-y: scroll;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
-#line-list::-webkit-scrollbar {
+#line-list ul {
+  padding: 0;
+  overflow-y: scroll;
+  height: calc(100% - 131px);
+}
+
+#line-list::-webkit-scrollbar,
+#line-list ul::-webkit-scrollbar {
   width: 0;
 }
 
@@ -28,11 +36,15 @@
   margin-bottom: 20px;
 }
 
+#line-list li:last-child {
+  margin-bottom: 50px;
+}
+
 #line-list .line-list-image-frame {
-  width: 70px;
-  height: 100px;
+  width: 62px;
+  height: 62px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline-block;
 }
 
@@ -46,14 +58,15 @@
   display: inline-block;
   font-size: 0;
   vertical-align: top;
-  margin-left: 3%;
-  width: calc(97% - 70px);
+  margin-left: 20px;
+  width: calc(100% - 62px - 20px);
 }
 
 #line-list .line-list-top-line h3 {
   margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 #line-list .line-list-top-line .line-list-title {
@@ -61,7 +74,8 @@
   color: white;
   width: calc(100% - 160px);
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 5px;
+  line-height: 14px;
 }
 
 #line-list .line-list-top-line .line-list-price,
@@ -70,9 +84,10 @@
   color: white;
   width: 160px;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 0;
   text-align: right;
+  line-height: 14px;
 }
 
 #line-list .line-list-top-line .line-list-price-discount h3 {
@@ -90,7 +105,7 @@
 
 #line-list .line-list-action-buttons {
   padding: 0;
-  width: calc(97% - 70px);
+  width: 100%;
 }
 
 #line-list .line-list-action-buttons li {

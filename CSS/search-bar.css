@@ -7,6 +7,7 @@
   text-transform: uppercase;
   font-family: "Rubik", sans-serif !important;
   border: none;
+  position: relative;
 }
 
 #search-bar {

@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <ul class="line-list-action-buttons">
-                        <li class="line-list-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"><span>Add to cart</span></li>
+                        <li class="line-list-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></li>
                     </ul>
                 </div>
             </li>

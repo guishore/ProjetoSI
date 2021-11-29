@@ -47,7 +47,7 @@
                         <h3>Name</h3>
                         <h4>10 minutes ago</h4>
                     </div>
-                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus.</p>
+                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
                 </div>
             </li>
 
@@ -61,6 +61,22 @@
                         <h4>10 minutes ago</h4>
                     </div>
                     <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus.</p>
+                </div>
+            </li>
+
+            <li class="comment">
+                <div class="profile-picture">
+                    <img src="IMAGES/PROFILE/ProfilePicture.jpg" alt="User Profile Picture">
+                </div>
+                <div class="comment-right-section">
+                    <div class="comment-top-line">
+                        <h3>Name</h3>
+                        <h4>10 minutes ago</h4>
+                    </div>
+                    <form action="">
+                        <textarea maxlength="1000" name="CommentArea" id="CommentArea" cols="30" rows="10"></textarea>
+                    </form>
+                    <button onclick="addFriendTabButton()"><img src="IMAGES/ICONS/arrow-right-dark.svg" alt=""> Post</button>
                 </div>
             </li>
 

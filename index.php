@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="CSS/home.css">
 </head>
 
-<body>
+<body class="home">
 
     <script>
         $(document).ready(function() {
@@ -34,275 +34,331 @@
             </div>
         </div>
 
-        <ul class="card-list">
+        <div class="card-list">
 
             <h2 class="card-list-title">Recommended</h2>
 
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/oZADAj.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Joker</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/K8A01x.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Blade Runner 2049</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/mq7A80.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>The French Dispatch</h3>
-                    <div class="discount">
-                        <h4 class="percentage">40% Off</h4>
-                        <h4 class="oldprice">14.99€</h4>
-                        <h4 class="newprice">8.99€</h4>
+            <ul>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Joker</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
                     </div>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
+                </li>
 
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/oZADAj.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Joker</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/K8A01x.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Blade Runner 2049</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/mq7A80.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>The French Dispatch</h3>
-                    <div class="discount">
-                        <h4 class="percentage">40% Off</h4>
-                        <h4 class="oldprice">14.99€</h4>
-                        <h4 class="newprice">8.99€</h4>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Blade Runner 2049</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
                     </div>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
+                </li>
 
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/oZADAj.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Joker</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/K8A01x.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Blade Runner 2049</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/mq7A80.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>The French Dispatch</h3>
-                    <div class="discount">
-                        <h4 class="percentage">40% Off</h4>
-                        <h4 class="oldprice">14.99€</h4>
-                        <h4 class="newprice">8.99€</h4>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>The French Dispatch</h3>
+                        <div class="discount">
+                            <h4 class="percentage">40% Off</h4>
+                            <h4 class="oldprice">14.99€</h4>
+                            <h4 class="newprice">8.99€</h4>
+                        </div>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
                     </div>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
+                </li>
 
-        </ul>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Joker</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
 
-        <ul class="card-list">
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Blade Runner 2049</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>The French Dispatch</h3>
+                        <div class="discount">
+                            <h4 class="percentage">40% Off</h4>
+                            <h4 class="oldprice">14.99€</h4>
+                            <h4 class="newprice">8.99€</h4>
+                        </div>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Joker</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Blade Runner 2049</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>The French Dispatch</h3>
+                        <div class="discount">
+                            <h4 class="percentage">40% Off</h4>
+                            <h4 class="oldprice">14.99€</h4>
+                            <h4 class="newprice">8.99€</h4>
+                        </div>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Joker</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Blade Runner 2049</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>The French Dispatch</h3>
+                        <div class="discount">
+                            <h4 class="percentage">40% Off</h4>
+                            <h4 class="oldprice">14.99€</h4>
+                            <h4 class="newprice">8.99€</h4>
+                        </div>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                
+
+            </ul>
+
+            <div class="card-list-previous-button"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt="Delete Icon"></div>
+            <div class="card-list-next-button"><img src="IMAGES/ICONS/arrow-right-dark.svg" alt="Delete Icon"></div>
+
+        </div>
+
+        <div class="card-list">
 
             <h2 class="card-list-title">Blockbuster Movies</h2>
 
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/oZADAj.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Joker</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/K8A01x.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Blade Runner 2049</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/mq7A80.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>The French Dispatch</h3>
-                    <div class="discount">
-                        <h4 class="percentage">40% Off</h4>
-                        <h4 class="oldprice">14.99€</h4>
-                        <h4 class="newprice">8.99€</h4>
+            <ul>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Joker</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
                     </div>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
+                </li>
 
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/oZADAj.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Joker</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/K8A01x.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Blade Runner 2049</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/mq7A80.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>The French Dispatch</h3>
-                    <div class="discount">
-                        <h4 class="percentage">40% Off</h4>
-                        <h4 class="oldprice">14.99€</h4>
-                        <h4 class="newprice">8.99€</h4>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Blade Runner 2049</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
                     </div>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
+                </li>
 
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/oZADAj.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Joker</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/K8A01x.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>Blade Runner 2049</h3>
-                    <h4>14.99€</h4>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="card card-medium">
-                <img class="card-item card-medium-gif" src="https://j.gifs.com/mq7A80.gif" alt="Movie GIF">
-                <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                <div class="card-item card-medium-bottom">
-                    <h3>The French Dispatch</h3>
-                    <div class="discount">
-                        <h4 class="percentage">40% Off</h4>
-                        <h4 class="oldprice">14.99€</h4>
-                        <h4 class="newprice">8.99€</h4>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>The French Dispatch</h3>
+                        <div class="discount">
+                            <h4 class="percentage">40% Off</h4>
+                            <h4 class="oldprice">14.99€</h4>
+                            <h4 class="newprice">8.99€</h4>
+                        </div>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
                     </div>
-                    <ul class="card-medium-action-buttons">
-                        <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                        <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
-                    </ul>
-                </div>
-            </li>
+                </li>
 
-        </ul>
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Joker</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Blade Runner 2049</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>The French Dispatch</h3>
+                        <div class="discount">
+                            <h4 class="percentage">40% Off</h4>
+                            <h4 class="oldprice">14.99€</h4>
+                            <h4 class="newprice">8.99€</h4>
+                        </div>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Joker</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>Blade Runner 2049</h3>
+                        <h4>14.99€</h4>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card card-medium">
+                    <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <div class="card-item card-medium-bottom">
+                        <h3>The French Dispatch</h3>
+                        <div class="discount">
+                            <h4 class="percentage">40% Off</h4>
+                            <h4 class="oldprice">14.99€</h4>
+                            <h4 class="newprice">8.99€</h4>
+                        </div>
+                        <ul class="card-medium-action-buttons">
+                            <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                            <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="card-list-previous-button"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt="Delete Icon"></div>
+            <div class="card-list-next-button"><img src="IMAGES/ICONS/arrow-right-dark.svg" alt="Delete Icon"></div>
+
+        </div>
 
         <script src="JS/cards.js"></script>
         <script src="JS/notifications.js"></script>
