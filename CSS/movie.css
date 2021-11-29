@@ -9,6 +9,40 @@
   border-radius: 25px;
 }
 
+#movie-player {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left 500ms ease-in-out;
+}
+
+#movie-player button {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+#movie-player button img {
+  display: inline-block;
+  width: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3px;
+}
+
+#movie-player video {
+  width: 100%;
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+}
+
 #comment-section {
   padding: 0;
   list-style: none;

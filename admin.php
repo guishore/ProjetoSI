@@ -174,9 +174,11 @@
 
         <div id="overall-stats">
 
-            <h2>Last 30 Days</h2>
+            <h3>Last 30 Days</h3>
 
-            <h3>276.34€</h3>
+            <h2>276.34€</h2>
+
+            <h4>67 Movies Sold</h4>
 
             <canvas id="overall-stats-chart"></canvas>
 

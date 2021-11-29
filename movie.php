@@ -28,9 +28,14 @@
 
                 <h3>14.99€</h3>
                 <ul class="card-large-action-buttons">
-                    <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                    <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"><span>Add to cart</span></li>
+                    <!--<li id="add-to-wishlist-button"><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                    <li id="add-to-cart-button"><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"><span>Add to cart</span></li>-->
+                    <li onclick="moviePlayerEnter()" id="play-button"><img src="IMAGES/ICONS/play-dark.svg" alt="Play Icon"><span>Play</span></li>
                 </ul>
+            </div>
+            <div id="movie-player">
+                <video src="VIDEOS/TEASERS/BladeRunner2049.mp4" controls controlsList="nodownload"></video>
+                <button onclick="moviePlayerLeave()"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
             </div>
         </div>
 
@@ -82,6 +87,7 @@
 
         </ul>
 
+        <script src="JS/movie.js"></script>
         <script src="JS/cards.js"></script>
         <script src="JS/notifications.js"></script>
         <script src="JS/main.js"></script>

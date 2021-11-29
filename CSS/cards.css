@@ -83,26 +83,37 @@
   margin-right: auto;
 }
 
-.card-large-action-buttons li:nth-child(2) {
+.card-large-action-buttons #add-to-cart-button {
   width: 160px;
 }
 
-.card-large-action-buttons li:nth-child(1) {
+.card-large-action-buttons #play-button {
+  width: 100px;
+}
+
+.card-large-action-buttons #add-to-wishlist-button {
   margin-right: 10px;
 }
 
-.card-large-action-buttons li:nth-child(1) img {
+.card-large-action-buttons #add-to-wishlist-button img {
   width: 13px;
   padding-top: 9px;
 }
 
-.card-large-action-buttons li:nth-child(2) img {
+.card-large-action-buttons #add-to-cart-button img {
   width: 17px;
   padding-top: 11px;
   margin-left: 17px;
 }
 
-.card-large-action-buttons li:nth-child(2) span {
+.card-large-action-buttons #play-button img {
+  width: 13px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+.card-large-action-buttons #add-to-cart-button span,
+.card-large-action-buttons #play-button span {
   position: absolute;
   top: 0;
   left: 48px;
@@ -181,7 +192,7 @@
   height: 350px;
   border-radius: 25px;
   margin-right: 35px;
-  transition: width 200ms ease-in-out;
+  transition: width 100ms ease-in-out;
   transition-delay: 250ms;
 }
 
@@ -191,7 +202,7 @@
 
 .card-medium-video {
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
   transition-delay: 250ms;
 }
 

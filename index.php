@@ -28,8 +28,8 @@
 
                 <h3>14.99€</h3>
                 <ul class="card-large-action-buttons">
-                    <li><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
-                    <li><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"><span>Add to cart</span></li>
+                    <li id="add-to-wishlist-button"><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
+                    <li id="add-to-cart-button"><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"><span>Add to cart</span></li>
                 </ul>
             </div>
         </div>
