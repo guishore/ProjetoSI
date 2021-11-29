@@ -14,23 +14,36 @@
 }
 
 .card-large-bottom {
+  z-index: 1;
   width: 100%;
-  height: 260px;
   background: rgba(30, 30, 30, 0.5);
   backdrop-filter: blur(30px);
   position: absolute;
   bottom: 0;
+  transition: bottom 500ms ease-in-out;
+}
+
+#rating {
+  margin-top: 50px;
+  display: block;
+  padding: 5px 8px;
+  background: white;
+  color: #1e1e1e;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  width: fit-content;
+  margin-left: 50px;
+  text-transform: uppercase;
 }
 
 .card-large-bottom h2 {
   color: white;
   font-size: 64px;
   font-weight: 700;
-  position: absolute;
-  bottom: 110px;
   padding: 0px 50px;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -45,6 +58,14 @@
   right: 50px;
   text-transform: uppercase;
 }
+.card-large-bottom h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: white;
+  padding: 0px 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
 .card-large-bottom p {
   color: white;
@@ -52,9 +73,8 @@
   font-weight: 400;
   padding: 0px 50px;
   margin: 0;
+  margin-bottom: 70px;
   width: 40%;
-  position: absolute;
-  bottom: 70px;
   text-align: justify;
 }
 
@@ -192,7 +212,7 @@
   height: 350px;
   border-radius: 25px;
   margin-right: 35px;
-  transition: width 100ms ease-in-out;
+  transition: width 200ms ease-in-out;
   transition-delay: 250ms;
 }
 
@@ -202,7 +222,7 @@
 
 .card-medium-video {
   opacity: 0;
-  transition: opacity 100ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
   transition-delay: 250ms;
 }
 

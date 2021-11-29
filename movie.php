@@ -23,10 +23,12 @@
         <div id="highlighted-card" class="card">
             <img class="card-large-image" src="IMAGES/MOVIES/Inception.jpg" alt="Movie Poster">
             <div class="card-large-bottom">
+                <div id="rating" class="r-rating-tag">R Rating</div>
                 <h2>Inception</h2>
+                <h4>Lead Cast:<span></span>Actor, Actor, Actor</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu netus et malesuada lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
 
-                <h3>14.99€</h3>
+                <!--<h3>14.99€</h3>-->
                 <ul class="card-large-action-buttons">
                     <!--<li id="add-to-wishlist-button"><img src="IMAGES/ICONS/bookmark-dark.svg" alt="Wishlist Icon"></li>
                     <li id="add-to-cart-button"><img src="IMAGES/ICONS/cart-dark.svg" alt="Shopping Cart Icon"><span>Add to cart</span></li>-->

@@ -14,9 +14,9 @@
   height: 100%;
   background-color: black;
   position: absolute;
-  top: 0;
-  left: 100%;
-  transition: left 500ms ease-in-out;
+  top: 100%;
+  left: 0;
+  transition: top 500ms ease-in-out;
 }
 
 #movie-player button {
@@ -53,6 +53,21 @@
   font-size: 24px;
   color: white;
   text-transform: uppercase;
+}
+
+.card-large-bottom h2 {
+  margin-top: 5px;
+}
+
+.card-large-bottom .r-rating-tag {
+  background: #e94c4c !important;
+  color: white !important;
+  letter-spacing: 1px;
+}
+
+.card-large-bottom h4 span {
+  width: 10px;
+  display: inline-block;
 }
 
 .comment {
