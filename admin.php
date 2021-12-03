@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <ul class="line-list-action-buttons">
-                            <li class="line-list-edit-button"><img src="IMAGES/ICONS/pencil-dark.svg" alt="Edit Icon"></li>
+                            <li class="line-list-edit-button" onclick="menuclick('admin-edit.php')"><img src="IMAGES/ICONS/pencil-dark.svg" alt="Edit Icon"></li>
                             <li class="line-list-delete-button"><img src="IMAGES/ICONS/trash-white.svg" alt="Delete Icon"></li>
                         </ul>
                     </div>

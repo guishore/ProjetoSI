@@ -142,6 +142,8 @@
   overflow-y: hidden;
   display: inline-block;
   box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow-x: hidden;
 }
 
 #balance-tab h2 {
@@ -240,6 +242,38 @@
   font-size: 12px;
 }
 
+#add-balance-tab,
+#request-tab,
+#send-tab {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  background: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  right: -100%;
+  transition: right 400ms ease-in-out;
+  padding: 50px;
+}
+
+
+.tab-back-button {
+  position: relative;
+  margin-left: 0;
+  width: 37px;
+  padding: 0;
+}
+
+.tab-back-button img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 15px;
+  margin-top: 2px;
+  vertical-align: top;
+}
+
+
 /*====================*/
 
 #friend-list {
@@ -294,7 +328,8 @@
   vertical-align: top;
 }
 
-#friend-list button {
+#friend-list li button,
+#friend-list-top-line button {
   float: right;
   vertical-align: top;
 }
@@ -406,8 +441,29 @@
 #add-friend-tab #search-bar {
   margin: 50px;
   width: calc(100% - 100px);
+  position: relative;
 }
 
 #add-friend-tab #search-bar #myInput {
-  width: calc(100% - 47px);
+  display: inline-block;
+  width: calc(100% - 47px - 47px);
+}
+#add-friend-tab #search-bar #search-bar-icon {
+  left: 60px;
+}
+
+#add-friend-tab #search-bar #add-friend-back-button {
+  display: inline-block;
+  margin-left: 0;
+  width: 37px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+#add-friend-tab #search-bar #add-friend-back-button img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15px;
+  margin-top: 2px;
+  vertical-align: top;
 }

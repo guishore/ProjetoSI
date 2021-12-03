@@ -10,6 +10,7 @@ $("#movie-player")
 function moviePlayerEnter() {
   $("#movie-player").css({ top: 0 });
   $(".card-large-bottom").css({ bottom: "-100%" });
+  $("#movie-player video").get(0).play();
 }
 
 function moviePlayerLeave() {

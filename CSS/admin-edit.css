@@ -1,0 +1,58 @@
+#primary-area {
+  font-size: 0;
+}
+
+#main-tab {
+  width: 100%;
+  height: calc(100vh - 84px - 120px);
+}
+
+#main-tab h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 0;
+}
+
+#edit-tab,
+#stats-tab {
+  width: calc(66% - 100px);
+  display: inline-block;
+  background-color: #313131;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+#comments-tab,
+#sales-tab {
+  width: calc(32% - 100px);
+  display: inline-block;
+  background-color: #313131;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 2%;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+#edit-tab,
+#comments-tab {
+  height: calc(50% - 100px);
+}
+
+#sales-tab {
+  margin-top: 2%;
+  height: calc(46% - 100px);
+}
+
+#stats-tab {
+  margin-top: 2%;
+  height: 46%;
+  width: 66%;
+  padding: 0;
+}
+
+#stats-tab h2 {
+  margin-left: 50px;
+  margin-top: 50px;
+}

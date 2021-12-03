@@ -42,8 +42,8 @@
 
                 </div>
 
-                <a href=""><button id="settings-button"><img src="IMAGES/ICONS/settings-dark.svg" alt="Edit Icon">Settings</button></a>
-                <a href=""><button id="logout-button"><img src="IMAGES/ICONS/logout-dark.svg" alt="Edit Icon">Logout</button></a>
+                <button onclick="menuclick('settings.php')" id="settings-button"><img src="IMAGES/ICONS/settings-dark.svg" alt="Edit Icon">Settings</button>
+                <button id="logout-button"><img src="IMAGES/ICONS/logout-dark.svg" alt="Edit Icon">Logout</button>
 
             </div>
 
@@ -52,9 +52,9 @@
                 <h2>90.90€</h2>
 
                 <div id="balance-buttons">
-                    <button><img src="IMAGES/ICONS/plus-dark.svg" alt=""> Add Balance</button>
-                    <button><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""> Request</button>
-                    <button><img src="IMAGES/ICONS/arrow-right-dark.svg" alt=""> Send</button>
+                    <button onclick="enterTab('#add-balance-tab')"><img src="IMAGES/ICONS/plus-dark.svg" alt=""> Add Balance</button>
+                    <button onclick="enterTab('#request-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""> Request</button>
+                    <button onclick="enterTab('#send-tab')"><img src="IMAGES/ICONS/arrow-right-dark.svg" alt=""> Send</button>
                 </div>
 
                 <ul id="latest-transactions">
@@ -158,6 +158,18 @@
 
                 </ul>
 
+                <div id="add-balance-tab">
+                    <button class="tab-back-button" onclick="leaveTab('#add-balance-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
+                </div>
+
+                <div id="request-tab">
+                    <button class="tab-back-button" onclick="leaveTab('#request-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
+                </div>
+
+                <div id="send-tab">
+                    <button class="tab-back-button" onclick="leaveTab('#send-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
+                </div>
+
             </div>
 
 
@@ -165,7 +177,7 @@
 
                 <div id="friend-list-top-line">
                     <h2>Following</h2>
-                    <button onclick="addFriendTabButton()"><img src="IMAGES/ICONS/user-plus-dark.svg" alt=""> Follow</button>
+                    <button onclick="enterTab('#add-friend-tab')"><img src="IMAGES/ICONS/user-plus-dark.svg" alt=""> Follow</button>
                 </div>
 
                 <ul>
@@ -275,6 +287,7 @@
 
                 <div id="add-friend-tab">
                     <div id="search-bar">
+                        <button id="add-friend-back-button" onclick="leaveTab('#add-friend-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
                         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search"><img id="search-bar-icon" src="IMAGES/ICONS/search-dark.svg" alt="Search Icon">
                     </div>
                 </div>
@@ -283,7 +296,6 @@
 
         </div>
 
-        <script src="JS/cards.js"></script>
         <script src="JS/notifications.js"></script>
         <script src="JS/main.js"></script>
 

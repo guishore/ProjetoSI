@@ -41,7 +41,7 @@
             <ul>
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Joker</h3>
                         <h4>14.99€</h4>
@@ -54,7 +54,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Blade Runner 2049</h3>
                         <h4>14.99€</h4>
@@ -67,7 +67,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>The French Dispatch</h3>
                         <div class="discount">
@@ -84,7 +84,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Joker</h3>
                         <h4>14.99€</h4>
@@ -97,7 +97,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Blade Runner 2049</h3>
                         <h4>14.99€</h4>
@@ -110,7 +110,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>The French Dispatch</h3>
                         <div class="discount">
@@ -127,7 +127,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Joker</h3>
                         <h4>14.99€</h4>
@@ -140,7 +140,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Blade Runner 2049</h3>
                         <h4>14.99€</h4>
@@ -153,7 +153,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>The French Dispatch</h3>
                         <div class="discount">
@@ -170,7 +170,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/Joker.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/Joker.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Joker</h3>
                         <h4>14.99€</h4>
@@ -183,7 +183,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/BladeRunner2049.jpg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/BladeRunner2049.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>Blade Runner 2049</h3>
                         <h4>14.99€</h4>
@@ -196,7 +196,7 @@
 
                 <li class="card card-medium">
                     <img class="card-item card-medium-image" src="IMAGES/MOVIES/TheFrenchDispatch.jpeg" alt="Movie Poster">
-                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" preload="none" muted></video>
+                    <video class="card-medium-video" src="VIDEOS/TEASERS/TheFrenchDispatch.mp4" muted></video>
                     <div class="card-item card-medium-bottom">
                         <h3>The French Dispatch</h3>
                         <div class="discount">
