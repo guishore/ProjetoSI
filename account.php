@@ -57,10 +57,6 @@
                             <p>Male</p>
                         </li>
                         <li>
-                            <h3>City</h3>
-                            <p>Coimbra</p>
-                        </li>
-                        <li>
                             <h3>Country</h3>
                             <p>Portugal</p>
                         </li>

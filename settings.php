@@ -51,9 +51,6 @@
                     <option value="non-binary">Non-Binary</option>
                     <option value="prefer-not-to-say">Prefer not to say</option>
                 </select>
-                
-                <label for="form-name">City</label>
-                <input type="text" id="form-city" value="Coimbra">
 
                 <label for="form-name">Country</label>
                 <input type="text" id="form-country" value="Portugal">

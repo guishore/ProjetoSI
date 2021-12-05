@@ -88,113 +88,63 @@
                     </div>
                 </form>
             </div>
+            
+            <div id="edit-right-section">
 
-            <div id="comments-tab">
-                <h2>Comments</h2>
-                <ul>
-                    <li>
-                        <div class="comment-top-line">
-                            <h3>Name</h3>
-                            <p>10 minutes ago</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
-                        <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
-                    </li>
-                    <li>
-                        <div class="comment-top-line">
-                            <h3>Name</h3>
-                            <p>10 minutes ago</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
-                        <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
-                    </li>
-                    <li>
-                        <div class="comment-top-line">
-                            <h3>Name</h3>
-                            <p>10 minutes ago</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
-                        <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
-                    </li>
-                    <li>
-                        <div class="comment-top-line">
-                            <h3>Name</h3>
-                            <p>10 minutes ago</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
-                        <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
-                    </li>
-                    <li>
-                        <div class="comment-top-line">
-                            <h3>Name</h3>
-                            <p>10 minutes ago</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
-                        <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
-                    </li>
-                </ul>
+                <div id="comments-tab">
+                    <h2>Comments</h2>
+                    <ul>
+                        <li>
+                            <div class="comment-top-line">
+                                <h3>Name</h3>
+                                <p>10 minutes ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
+                            <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                        </li>
+                        <li>
+                            <div class="comment-top-line">
+                                <h3>Name</h3>
+                                <p>10 minutes ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
+                            <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                        </li>
+                        <li>
+                            <div class="comment-top-line">
+                                <h3>Name</h3>
+                                <p>10 minutes ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
+                            <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                        </li>
+                        <li>
+                            <div class="comment-top-line">
+                                <h3>Name</h3>
+                                <p>10 minutes ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
+                            <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                        </li>
+                        <li>
+                            <div class="comment-top-line">
+                                <h3>Name</h3>
+                                <p>10 minutes ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu lobortis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porta dui nec libero lobortis porta.</p>
+                            <div class="comment-delete-button"><img src="IMAGES/ICONS/trash-dark.svg" alt="Delete Icon"></div>
+                        </li>
+                    </ul>
 
-            </div>
+                </div>
 
-            <div id="stats-tab">
+                <div id="stats-tab">
 
-                <canvas id="stats-graph"></canvas>
-                <h2>Sales Graph</h2>
+                    <canvas id="stats-graph"></canvas>
+                    <h2>Sales Graph</h2>
 
-            </div>
+                </div>
 
-            <div id="sales-tab">
-                <h2>Latest Buyers</h2>
-                <ul>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                    <li>
-                        <h3>Name</h3>
-                        <p>10 minutes ago</p>
-                    </li>
-                </ul>
             </div>
 
         </div>

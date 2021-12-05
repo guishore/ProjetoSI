@@ -15,8 +15,7 @@
   margin-bottom: 20px;
 }
 
-#edit-tab,
-#stats-tab {
+#edit-tab {
   width: calc(66% - 100px);
   display: inline-block;
   background-color: #313131;
@@ -25,40 +24,37 @@
   padding: 50px;
   overflow: hidden;
   position: relative;
+  height: calc(100% - 100px);
+}
+
+#edit-right-section{
+  width: 32%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
 }
 
 #comments-tab,
-#sales-tab {
-  width: calc(32% - 100px);
-  display: inline-block;
+#stats-tab {
   background-color: #313131;
   box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
-  margin-left: 2%;
   border-radius: 20px;
   padding: 50px;
   overflow: hidden;
   position: relative;
 }
 
-#edit-tab {
-  height: calc(55% - 100px);
-}
-
 #comments-tab {
-  height: calc(55% - 50px);
-  padding-bottom: 0;
-}
-
-#sales-tab {
-  margin-top: 2%;
-  height: calc(41% - 50px);
+  width: calc(100% - 100px);
+  height: calc(50% - 50px - 15px);
   padding-bottom: 0;
 }
 
 #stats-tab {
-  margin-top: 2%;
-  height: 41%;
-  width: 66%;
+  margin-top: 30px;
+  height: calc(50% - 15px);
+  width: 100%;
   padding: 0;
 }
 
@@ -76,14 +72,14 @@
 }
 
 #edit-tab form #info-left-section {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   height: 100%;
   vertical-align: top;
 }
 
 #edit-tab form #info-right-section {
-  width: 68%;
+  width: 58%;
   height: 100%;
   margin-left: 2%;
   display: inline-block;
