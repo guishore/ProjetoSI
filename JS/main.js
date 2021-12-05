@@ -16,33 +16,24 @@ $(document).ready(function () {
   });
 });
 
-function enterTab(j) {
-  $(j).css({
-    right: 0,
-  });
-}
+$("#ratings li").click(function () {
+  $("#info-rating").attr("value", $(this).html());
+  $(this).css({ color: "white" });
+  $("#ratings li").not(this).css({ color: "grey" });
+});
 
-function leaveTab(j) {
-  $(j).css({
-    right: "-100%",
-  });
-}
+$("#info-percentage input[type='checkbox']").click(function () {
 
-var settingsMenuActive = "#settings-profile-button";
-
-function settingsMenuClick(j, k) {
-  $("#settings form").css({ display: "none" });
-  $(j).css({ display: "block" });
-  $("#settings-menu li").css({ background: "transparent" });
-  $(k).css({ background: "grey" });
-  settingsMenuActive = k;
-}
-
-$("#settings-menu li")
-  .mouseover(function () {
-    $(this).css({ background: "grey" });
-  })
-  .mouseout(function () {
-      $(this).css({ background: "transparent" });
-      $(settingsMenuActive).css({ background: "grey" });
-  });
+  $(this).toggleClass("active");
+  
+  if($(this).hasClass("active")){
+    $("#info-percentage-value").css({
+      color: "white"
+    });
+  } else {
+    $("#info-percentage-value").css({
+      color: "grey"
+    });
+  }
+  
+})

@@ -11,7 +11,7 @@
 #myInput {
   display: inline-block;
   width: calc(100% - 47px - 140px);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #line-list .line-list-action-buttons .line-list-delete-button {
@@ -41,11 +41,12 @@
   position: relative;
 }
 
-#overall-stats #overall-stats-chart {
+#overall-stats #overall-stats-chart-frame {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 50%;
 }
 
 #overall-stats h2,

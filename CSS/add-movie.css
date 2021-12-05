@@ -1,0 +1,240 @@
+#add-movie-tab {
+  width: calc(100% - 100px);
+  display: block;
+  background-color: #313131;
+  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 50px;
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 84px - 120px - 100px);
+}
+
+#add-movie-tab h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#add-movie-tab form {
+  width: 100%;
+  height: calc(100% - 24.55px - 20px);
+  font-size: 0;
+}
+
+#add-movie-tab form #info-left-section {
+  width: 30%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+#add-movie-tab form #info-right-section {
+  width: 68%;
+  height: 100%;
+  margin-left: 2%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#add-movie-tab form #info-left-section #info-image-frame {
+  width: 100%;
+  height: calc(100% - 45px);
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  background-color: #191919;
+}
+
+#add-movie-tab form #info-left-section #info-image-frame img {
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
+}
+#add-movie-tab form #info-left-section #info-image-frame #info-image-file-frame {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #191919;
+  background: white;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0;
+  cursor: pointer;
+}
+
+#add-movie-tab form #info-left-section #info-image-frame #info-image-file-frame img {
+  object-fit: fill;
+  display: block;
+  width: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#add-movie-tab form #info-right-section #info-teaser-file-frame,
+#add-movie-tab form #info-right-section #info-movie-file-frame,
+#add-movie-tab form #info-right-section #info-button {
+  text-align: center;
+  width: 32%;
+  display: inline-block;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 0;
+  vertical-align: top;
+}
+
+#add-movie-tab form #info-right-section #info-teaser-file-frame,
+#add-movie-tab form #info-right-section #info-movie-file-frame {
+  background-color: #191919;
+}
+
+#add-movie-tab form #info-right-section #info-movie-file-frame {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#add-movie-tab form #info-right-section #info-teaser-file-frame h3,
+#add-movie-tab form #info-right-section #info-movie-file-frame h3 {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#add-movie-tab form #info-left-section #info-image-frame #info-image-file,
+#add-movie-tab form #info-right-section #info-teaser-file,
+#add-movie-tab form #info-right-section #info-movie-file {
+  display: none;
+}
+
+#add-movie-tab form #info-left-section #ratings {
+  height: 25px;
+  margin-top: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  list-style: none;
+}
+
+#add-movie-tab form #info-left-section #ratings li {
+  font-size: 14px;
+  display: inline-block;
+  color: grey;
+  margin: 0 3px;
+  background: #191919;
+  border-radius: 5px;
+  padding: 4px 7px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+#add-movie-tab form #info-right-section * {
+  margin-top: 10px;
+}
+
+#add-movie-tab form #info-right-section input:first-child {
+  margin: 0;
+}
+
+#add-movie-tab form #info-right-section input,
+#add-movie-tab form #info-right-section select,
+#add-movie-tab form #info-right-section #info-bottom-section {
+  height: 35px;
+}
+
+#add-movie-tab form #info-right-section input,
+#add-movie-tab form #info-right-section textarea {
+  resize: none;
+  background: #191919;
+  border-radius: 5px;
+  border: 0;
+  padding: 0 20px;
+  width: calc(100% - 40px);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+
+#add-movie-tab form #info-right-section select {
+  resize: none;
+  background: #191919;
+  border-radius: 5px;
+  border: 0;
+  padding: 0 20px;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+
+#add-movie-tab form #info-right-section textarea {
+  height: calc(100% - 225px - 40px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#add-movie-tab form #info-right-section #info-percentage,
+#add-movie-tab form #info-right-section #info-price {
+  margin-top: 0;
+  margin-left: 2%;
+  width: 49%;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+#add-movie-tab form #info-right-section #info-price {
+  text-align: center;
+  margin-left: 0;
+}
+
+#add-movie-tab form #info-right-section #info-percentage input[type="checkbox"] {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+#add-movie-tab form #info-right-section #info-price input {
+  text-align: center;
+  padding-right: 40px;
+  width: calc(100% - 60px);
+}
+#add-movie-tab form #info-right-section #info-percentage input {
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: calc(100% - 80px);
+  color: grey;
+}
+
+#add-movie-tab form #info-right-section #info-button {
+  color: #191919;
+  background: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#add-movie-tab form #info-right-section #info-price span,
+#add-movie-tab form #info-right-section #info-percentage span {
+  position: absolute;
+  font-size: 14px;
+  top: -1px;
+  right: 15px;
+  color: gray;
+}

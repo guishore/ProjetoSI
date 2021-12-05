@@ -24,7 +24,7 @@
             <div id="search-bar">
                 <input type="text" id="myInput" onkeyup="myFunctionAdmin()" placeholder="Search">
                 <img id="search-bar-icon" src="IMAGES/ICONS/search-dark.svg" alt="Search Icon">
-                <button id="add-movie-button"><img src="IMAGES/ICONS/plus-dark.svg" alt="Plus Icon"> Add Movie</button>
+                <button id="add-movie-button" onclick="menuclick('add-movie.php');"><img src="IMAGES/ICONS/plus-dark.svg" alt="Plus Icon"> Add Movie</button>
             </div>
 
             <ul>
@@ -179,12 +179,12 @@
             <h2>276.34€</h2>
 
             <h4>67 Movies Sold</h4>
-
-            <canvas id="overall-stats-chart"></canvas>
-
+            <div id="overall-stats-chart-frame">
+                <canvas id="overall-stats-chart"></canvas>
+            </div>
         </div>
 
-        <script src="JS/stats.js"></script>
+        <script src="JS/overall-stats.js"></script>
         <script src="JS/notifications.js"></script>
         <script src="JS/main.js"></script>
         <script src="JS/search.js"></script>

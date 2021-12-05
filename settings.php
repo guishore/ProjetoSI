@@ -26,8 +26,11 @@
             <form action="" id="settings-profile">
                 <h2>Edit Profile</h2>
 
-                <label for="form-picture">Profile Picture</label>
-                <input type="file" id="form-picture" value="Guilherme Costa">
+                <label>Profile Picture</label>
+                <label id="form-picture-button" for="form-picture">
+                    <input type="file" id="form-picture" value="Guilherme Costa">
+                    <h4>Upload New Picture</h4>
+                </label>
 
                 <label for="form-name">Name</label>
                 <input type="text" id="form-name" value="Guilherme Costa">
@@ -37,6 +40,23 @@
 
                 <label for="form-name">Email</label>
                 <input type="email" id="form-email" value="guilhermepmcosta@gmail.com">
+                
+                <label for="form-name">Phone</label>
+                <input type="tel" id="form-phone" pattern="[0-9]{9}" value="912345678">
+                
+                <label for="form-name">Gender</label>
+                <select id="form-gender" value="Guilherme Costa">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Non-Binary</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+                
+                <label for="form-name">City</label>
+                <input type="text" id="form-city" value="Coimbra">
+
+                <label for="form-name">Country</label>
+                <input type="text" id="form-country" value="Portugal">
 
                 <input type="submit" name="" id="form-profile-submit" value="Save Changes">
             </form>
@@ -65,11 +85,12 @@
                 <label for="form-info">Hide watch info</label>
                 <input type="checkbox" id="form-info">
                 <p>(This will only apply for 6 hours)</p>
-                
+
                 <input type="submit" name="" id="form-privacy-submit" value="Save Changes">
             </form>
         </div>
 
+        <script src="JS/account.js"></script>
         <script src="JS/notifications.js"></script>
         <script src="JS/main.js"></script>
 

@@ -36,9 +36,35 @@
                     </div>
                 </div>
 
-                <div id="echievements-tab">
+                <div id="profile-details-tab">
 
-                    <h2>Achievements</h2>
+                    <h2>Profile Details</h2>
+
+                    <h4>Profile Hidden</h4>
+                    <h4>Watch Info Hidden</h4>
+
+                    <ul>
+                        <li>
+                            <h3>Email</h3>
+                            <p>g*********@gmail.com</p>
+                        </li>
+                        <li>
+                            <h3>Phone</h3>
+                            <p>9****3000</p>
+                        </li>
+                        <li>
+                            <h3>Gender</h3>
+                            <p>Male</p>
+                        </li>
+                        <li>
+                            <h3>City</h3>
+                            <p>Coimbra</p>
+                        </li>
+                        <li>
+                            <h3>Country</h3>
+                            <p>Portugal</p>
+                        </li>
+                    </ul>
 
                 </div>
 
@@ -160,14 +186,60 @@
 
                 <div id="add-balance-tab">
                     <button class="tab-back-button" onclick="leaveTab('#add-balance-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
+                    <form action="">
+
+                        <h4>Add Balance</h4>
+
+                        <label for="add-balance-amount">Amount</label>
+                        <div id="add-balance-amount-frame">
+                            <input id="add-balance-amount" type="text">
+                            <span id="add-balance-currency">€</span>
+                        </div>
+
+                        <input type="submit" value="Add Balance">
+
+                    </form>
                 </div>
 
                 <div id="request-tab">
                     <button class="tab-back-button" onclick="leaveTab('#request-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
+
+                    <form action="">
+
+                        <h4>Request</h2>
+
+                            <label for="request-user">Username</label>
+                            <input id="request-user" type="text">
+
+                            <label for="request-amount">Amount</label>
+                            <input id="request-amount" type="text">
+
+
+                            <input type="submit" value="Request">
+
+                    </form>
+
                 </div>
 
                 <div id="send-tab">
                     <button class="tab-back-button" onclick="leaveTab('#send-tab')"><img src="IMAGES/ICONS/arrow-left-dark.svg" alt=""></button>
+
+                    <form action="">
+
+                        <h4>Send</h4>
+
+                        <label for="send-user">Username</label>
+                        <input id="send-user" type="text">
+
+                        <label for="send-amount">Amount</label>
+                        <input id="send-amount" type="text">
+
+
+                        <input type="submit" value="Send">
+
+                    </form>
+
+
                 </div>
 
             </div>
@@ -296,6 +368,7 @@
 
         </div>
 
+        <script src="JS/account.js"></script>
         <script src="JS/notifications.js"></script>
         <script src="JS/main.js"></script>
 
