@@ -10,6 +10,11 @@ function menuclick(j) {
   );
 }
 
+function loginRegisterButton(j) {
+  $(".main-tab").css({ display: "none" });
+  $(j).css({ display: "block" });
+}
+
 $(document).ready(function () {
   $("#primary-area").css({
     opacity: 1,
@@ -23,17 +28,15 @@ $("#ratings li").click(function () {
 });
 
 $("#info-percentage input[type='checkbox']").click(function () {
-
   $(this).toggleClass("active");
-  
-  if($(this).hasClass("active")){
+
+  if ($(this).hasClass("active")) {
     $("#info-percentage-value").css({
-      color: "white"
+      color: "white",
     });
   } else {
     $("#info-percentage-value").css({
-      color: "grey"
+      color: "grey",
     });
   }
-  
-})
+});

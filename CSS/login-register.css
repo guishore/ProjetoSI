@@ -1,0 +1,68 @@
+.main-tab {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 200px;
+  width: 450px;
+}
+
+#register-tab {
+  display: none;
+  margin-top: 100px;
+}
+
+.main-tab h1 {
+  font-size: 46px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.main-tab .top-section {
+  padding: 50px;
+  background: #313131;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.main-tab .bottom-section {
+  padding: 40px;
+  background: #313131;
+  border-radius: 25px;
+}
+
+.main-tab .top-section input {
+  width: 100%;
+  padding: 0px 20px;
+  height: 35px;
+  background: #191919;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.main-tab .top-section input[type="submit"] {
+  color: #191919;
+  background: white;
+  cursor: pointer;
+}
+
+.main-tab .bottom-section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-tab .bottom-section button {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
