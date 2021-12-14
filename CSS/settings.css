@@ -121,7 +121,7 @@
 
 #settings #settings-privacy label {
   display: inline-block;
-  width: 28%;
+  width: 18%;
   font-size: 14px;
   text-transform: uppercase;
   color: white;
@@ -129,11 +129,16 @@
   vertical-align: text-bottom;
 }
 
+#settings #settings-privacy div{
+  width: 80%;
+  display: inline-block;
+}
+
 #settings #settings-privacy input[type="checkbox"] {
   display: inline-block;
   width: 20px;
   margin-left: 0;
-  margin-right: calc(70% - 20px);
+  margin-right: 10px;
   background-color: #191919;
   border-radius: 5px;
   padding: 0;
@@ -152,11 +157,6 @@
   display: inline-block;
   margin: 0;
   vertical-align: text-bottom;
-}
-
-#settings #settings-privacy #form-info {
-  margin-bottom: 0px;
-  margin-right: 20px;
 }
 
 #settings form input[type="submit"] {

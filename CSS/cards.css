@@ -64,6 +64,7 @@
   color: white;
   padding: 0px 50px;
   font-weight: 500;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -95,12 +96,15 @@
   width: 35px;
   height: 35px;
   list-style: none;
+  cursor: pointer;
 }
 
 .card-large-action-buttons li img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 9px;
+  width: 12px;
 }
 
 .card-large-action-buttons #add-to-cart-button {
@@ -113,11 +117,6 @@
 
 .card-large-action-buttons #add-to-wishlist-button {
   margin-right: 10px;
-}
-
-.card-large-action-buttons #add-to-wishlist-button img {
-  width: 13px;
-  padding-top: 9px;
 }
 
 .card-large-action-buttons #add-to-cart-button img {
@@ -216,7 +215,7 @@
   transition-delay: 250ms;
 }
 
-.card-list .card-medium:hover {
+.card-medium:hover {
   width: 400px;
 }
 
@@ -266,7 +265,9 @@
   right: 25px;
   padding: 0;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  z-index: 2;
+  transition: all 200ms ease-in-out !important;
+  transition-delay: 250ms !important;
 }
 
 .card-medium-action-buttons li {
@@ -290,7 +291,7 @@
 }
 
 .card-medium-action-buttons li:nth-child(1) img {
-  width: 13px;
+  width: 12px;
   padding-top: 9px;
 }
 

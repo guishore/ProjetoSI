@@ -1,575 +1,637 @@
 #primary-area {
-  height: calc(100% - 120px);
-  font-size: 0;
+    height: calc(100% - 120px);
+    font-size: 0;
 }
 
 #main-tab {
-  height: calc(100% - 55px + 11px - 40px);
-  width: 100%;
-  font-size: 0;
+    height: calc(100% - 55px + 11px - 40px);
+    width: 100%;
+    font-size: 0;
 }
 
 #account-section {
-  width: 32%;
-  height: 100%;
-  display: inline-block;
-  vertical-align: top;
+    width: 32%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #profile-tab {
-  width: 100%;
-  height: 250px;
-  border-radius: 20px;
-  background-color: #313131;
-  position: relative;
-  overflow-x: hidden;
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #313131;
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 #profile-tab #profile-picture-frame {
-  height: 250px;
-  width: 150px;
-  overflow: hidden;
+    height: 250px;
+    width: 150px;
+    overflow: hidden;
 }
 
 #profile-tab #profile-picture {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 #profile-info {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 250px;
-  margin-left: 150px;
-  padding-left: 50px;
-  color: white;
-  font-size: 16px;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 250px;
+    margin-left: 150px;
+    padding-left: 50px;
+    color: white;
+    font-size: 16px;
 }
 
 #profile-info h2 {
-  text-transform: uppercase;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
-  font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
 }
 
 #profile-info h3 {
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
-  letter-spacing: 0.5px;
-  font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
 }
 
 #profile-info h4 {
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 #profile-info .profile-number {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 #profile-info button img {
-  width: 13px;
-  margin-bottom: -2px;
-  margin-right: 8px;
+    width: 13px;
+    margin-bottom: -2px;
+    margin-right: 8px;
 }
 
 #profile-details-tab {
-  background: #313131;
-  border-radius: 20px;
-  margin-top: 30px;
-  height: calc(100% - 250px - 150px - 100px);
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
-  padding: 50px;
+    background: #313131;
+    border-radius: 20px;
+    margin-top: 30px;
+    height: calc(100% - 250px - 150px - 100px);
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    padding: 50px;
 }
 
 #profile-details-tab h2 {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
-  font-size: 20px;
-  color: white;
-  margin-top: 0;
-  margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 #profile-details-tab ul {
-  padding: 0;
-  margin: 0;
-  margin-top: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
 }
 
 #profile-details-tab ul li {
-  width: 100%;
-  margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 #profile-details-tab ul li h3 {
-  font-size: 14px;
-  width: 50%;
-  color: white;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 0;
+    font-size: 14px;
+    width: 50%;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
 }
 
 #profile-details-tab ul li p {
-  font-size: 14px;
-  width: 50%;
-  color: white;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: right;
-  display: inline-block;
-  margin: 0;
+    font-size: 14px;
+    width: 50%;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    display: inline-block;
+    margin: 0;
 }
 
 #profile-details-tab h4 {
-  font-size: 12px;
-  color: #191919;
-  background-color: white;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 0;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-right: 10px;
+    font-size: 12px;
+    color: #191919;
+    background-color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
 
 /*====================*/
 
-#logout-button {
-  width: 100%;
-  margin-top: 20px;
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+#logout {
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+
+#logout label {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: #191919;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 9px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#logout input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 #settings-button {
-  width: 100%;
-  margin-top: 30px;
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
-#logout-button img {
-  width: 12px;
-  margin-right: 8px;
-  margin-bottom: -3px;
+#logout img {
+    width: 12px;
+    margin-bottom: -2.5px;
+    margin-right: 8px;
 }
 
 #settings-button img {
-  width: 12px;
-  margin-right: 6px;
-  margin-bottom: -1px;
+    width: 12px;
+    margin-right: 6px;
+    margin-bottom: -1px;
 }
 
 /*====================*/
 
 #balance-tab {
-  margin-left: 2%;
-  width: calc(32% - 100px);
-  height: calc(100% - 50px);
-  border-radius: 20px;
-  background-color: #313131;
-  margin-bottom: 40px;
-  color: white;
-  padding: 50px;
-  padding-bottom: 0;
-  overflow-y: hidden;
-  display: inline-block;
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
-  position: relative;
-  overflow-x: hidden;
+    margin-left: 2%;
+    width: calc(32% - 100px);
+    height: calc(100% - 50px);
+    border-radius: 20px;
+    background-color: #313131;
+    margin-bottom: 40px;
+    color: white;
+    padding: 50px;
+    padding-bottom: 0;
+    overflow-y: hidden;
+    display: inline-block;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow-x: hidden;
 }
 
 #balance-tab h2 {
-  font-size: 60px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  width: fit-content;
-  letter-spacing: 2px;
+    font-size: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: fit-content;
+    letter-spacing: 2px;
 }
 
 #balance-tab h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-right: auto;
-  margin-left: auto;
-  width: fit-content;
-  margin-top: 0;
-  letter-spacing: 0.5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    margin-top: 0;
+    letter-spacing: 0.5px;
 }
 
 #balance-buttons {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #balance-buttons button img {
-  width: 10px;
-  margin-right: 8px;
+    width: 10px;
+    margin-right: 8px;
 }
 
 #balance-buttons button:nth-child(1) {
-  width: 40%;
+    width: 40%;
 }
 
 #balance-buttons button:nth-child(2) {
-  width: 32%;
-  margin-left: 2%;
+    width: 32%;
+    margin-left: 2%;
 }
 
 #balance-buttons button:nth-child(3) {
-  width: 24%;
-  margin-left: 2%;
+    width: 24%;
+    margin-left: 2%;
 }
 
 /*====================*/
 
 #latest-transactions {
-  list-style: none;
-  padding: 0;
-  margin-top: 40px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  height: calc(100% - 252px);
-  overflow-y: scroll;
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: calc(100% - 252px);
+    overflow-y: scroll;
 }
 
 #latest-transactions::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 #latest-transactions h4 {
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 0.5px;
-  margin-top: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-top: 0;
 }
 
 #latest-transactions li {
-  margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-#latest-transactions .transaction-top-line {
-  font-size: 0;
+#latest-transactions .transaction-top-line,
+#latest-transactions .transaction-bottom-line {
+    font-size: 0;
 }
 
 #latest-transactions .transaction-title,
 #latest-transactions .transaction-value {
-  display: inline-block;
-  width: 50%;
-  text-transform: uppercase;
-  font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
 #latest-transactions .transaction-title {
-  font-weight: 700;
+    width: 70%;
+}
+
+#latest-transactions .transaction-title img {
+    width: 10px;
+    display: inline-block;
+    margin: 0 5px;
 }
 
 #latest-transactions .transaction-value {
-  font-weight: 500;
-  text-align: right;
+    width: 30%;
+}
+
+#latest-transactions .transaction-value {
+    text-align: right;
 }
 
 #latest-transactions .transaction-date {
-  font-size: 12px;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+
+#latest-transactions .transaction-bottom-line .transaction-date {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.state {
+    font-weight: 500;
+    margin-left: 15px;
+    letter-spacing: 0.4px;
+}
+
+.state-pending {
+    color: #F6F048;
+}
+
+.state-denied, .state-canceled {
+    color: #E94C4C;
+}
+
+.state-accepted {
+    color: #44F160;
+}
+
+#latest-transactions li form {
+    display: inline-block;
+    width: 50%;
+    margin-top: 5px;
+}
+
+#latest-transactions li form input[type="submit"] {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px;
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    color: #191919;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    margin-right: 10px;
 }
 
 #add-balance-tab,
 #request-tab,
-#send-tab {
-  width: calc(100% - 100px);
-  height: calc(100% - 100px);
-  background: rgba(30, 30, 30, 0.5);
-  backdrop-filter: blur(30px);
-  position: absolute;
-  top: 0;
-  right: -100%;
-  transition: right 400ms ease-in-out;
-  padding: 50px;
+#send-tab,
+#add-friend-tab {
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    background: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: right 400ms ease-in-out;
+    padding: 50px;
 }
 
-.tab-back-button {
-  position: relative;
-  margin-left: 0;
-  width: 37px;
-  padding: 0;
+#add-balance-tab .tab-back-button,
+#request-tab .tab-back-button,
+#send-tab .tab-back-button,
+#add-friend-tab .tab-back-button {
+    position: relative;
+    margin-left: 0;
+    width: 37px;
+    padding: 0;
 }
 
-.tab-back-button img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 15px;
-  margin-top: 2px;
-  vertical-align: top;
+#add-balance-tab .tab-back-button img,
+#request-tab .tab-back-button img,
+#send-tab .tab-back-button img,
+#add-friend-tab .tab-back-button img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15px;
+    margin-top: 2px;
+    vertical-align: top;
 }
 
 #add-balance-tab h4,
 #request-tab h4,
-#send-tab h4 {
-  font-size: 20px;
-  text-align: left;
-  text-transform: uppercase;
+#send-tab h4,
+#add-friend-tab h4 {
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
 }
 
 #add-balance-tab form,
 #request-tab form,
-#send-tab form {
-  margin-top: 30px;
-  position: relative;
+#send-tab form,
+#add-friend-tab form {
+    margin-top: 30px;
+    position: relative;
 }
 
 #add-balance-tab label,
 #request-tab label,
-#send-tab label {
-  display: block;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 20px;
+#send-tab label,
+#add-friend-tab label {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: white;
 }
 
 #add-balance-tab input,
 #request-tab input,
-#send-tab input {
-  border: 0;
-  height: 35px;
-  color: white;
-  width: calc(100% - 60px);
-  padding-left: 20px;
-  padding-right: 40px;
-  border-radius: 5px;
-  background-color: #191919;
-  font-size: 14px;
+#send-tab input,
+#add-friend-tab input {
+    border: 0;
+    height: 35px;
+    color: white;
+    width: calc(100% - 60px);
+    padding-left: 20px;
+    padding-right: 40px;
+    border-radius: 5px;
+    background-color: #191919;
+    font-size: 14px;
 }
 
 #add-balance-tab input[type="submit"],
 #request-tab input[type="submit"],
-#send-tab input[type="submit"] {
-  background-color: white;
-  color: #191919;
-  text-transform: uppercase;
-  width: 100%;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  margin-top: 30px;
+#send-tab input[type="submit"],
+#add-friend-tab input[type="submit"] {
+    background-color: white;
+    color: #191919;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 30px;
 }
 
-#add-balance-amount-frame {
-  position: relative;
+.currency-frame {
+    position: relative;
 }
 
-#add-balance-currency {
-  position: absolute;
-  font-size: 14px;
-  color: grey;
-  right: 15px;
-  top: 10px;
+.currency {
+    position: absolute;
+    font-size: 14px;
+    color: grey;
+    right: 15px;
+    top: 10px;
 }
 
 /*====================*/
 
 #friend-list {
-  vertical-align: top;
-  display: inline-block;
-  width: 32%;
-  height: 100%;
-  margin-left: 2%;
-  border-radius: 20px;
-  background-color: #313131;
-  position: relative;
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
-  font-size: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  position: relative;
+    vertical-align: top;
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+    margin-left: 2%;
+    border-radius: 20px;
+    background-color: #313131;
+    position: relative;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    font-size: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
 }
 
 #friend-list ul {
-  padding: 0;
-  margin-right: 50px;
-  margin-left: 50px;
-  width: calc(100% - 100px);
-  height: calc(100% - 120px);
-  overflow-y: scroll;
-  overflow-x: visible;
+    padding: 0;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: calc(100% - 100px);
+    height: calc(100% - 120px);
+    overflow-y: scroll;
+    overflow-x: visible;
 }
 
 #friend-list::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 #friend-list ul::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 #friend-list-top-line {
-  font-size: 0;
-  width: calc(100% - 100px);
-  height: 35px;
-  margin: 50px;
-  margin-bottom: 35px;
+    font-size: 0;
+    width: calc(100% - 100px);
+    height: 35px;
+    margin: 50px;
+    margin-bottom: 35px;
 }
 
 #friend-list h2 {
-  display: inline-block;
-  text-transform: uppercase;
-  margin: 0;
-  letter-spacing: 0.5px;
-  font-size: 20px;
-  color: white;
-  vertical-align: top;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    color: white;
+    vertical-align: top;
 }
 
 #friend-list li button,
 #friend-list-top-line button {
-  float: right;
-  vertical-align: top;
+    float: right;
+    vertical-align: top;
 }
 
 #friend-list button img {
-  display: inline-block;
-  width: 18px;
-  margin-right: 5px;
-  margin-bottom: -4px;
+    display: inline-block;
+    width: 18px;
+    margin-right: 5px;
+    margin-bottom: -4px;
 }
 
 #friend-list li {
-  margin-bottom: 20px;
-  position: relative;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 #friend-list .friend-image-frame {
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  border-radius: 10px;
-  display: inline-block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 #friend-list .friend-image-frame img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 #friend-list .friend-right-section {
-  width: calc(100% - 80px -20px);
-  display: inline-block;
-  margin-left: 20px;
-  vertical-align: top;
+    width: calc(100% - 80px - 20px);
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    overflow: hidden;
 }
 
 #friend-list h3 {
-  font-size: 20px;
-  color: white;
-  text-transform: uppercase;
-  margin-top: 3px;
-  margin-bottom: 7px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#friend-list .friend-username {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 7px;
+    letter-spacing: 0.4px;
 }
 
 #friend-list .friend-currently-watching-icon {
-  width: 10px;
-  display: inline-block;
-  margin-right: 7px;
-}
-
-#friend-list .friend-currently-watching-tag {
-  font-size: 14px;
-  color: white;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 2px;
-  letter-spacing: 0.4px;
+    width: 10px;
+    display: inline-block;
+    margin-right: 7px;
 }
 
 #friend-list .friend-currently-watching {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 17px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 2px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    width: calc(100% - 17px);
+    height: 15px;
 }
 
 #friend-list li:hover .friend-delete-button {
-  opacity: 1;
+    opacity: 1;
 }
 
 #friend-list .friend-delete-button {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border-radius: 5px;
-  position: absolute;
-  top: 3px;
-  right: 0px;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
 }
 
 #friend-list .friend-delete-button img {
-  width: 13px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 8px;
+    width: 13px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8px;
 }
 
-#add-friend-tab {
-  width: 100%;
-  height: 100%;
-  background: rgba(30, 30, 30, 0.5);
-  backdrop-filter: blur(30px);
-  position: absolute;
-  top: 0;
-  right: -100%;
-  transition: right 400ms ease-in-out;
-}
-
-#add-friend-tab #search-bar {
-  margin: 50px;
-  width: calc(100% - 100px);
-  position: relative;
-}
-
-#add-friend-tab #search-bar #myInput {
-  display: inline-block;
-  width: calc(100% - 47px - 47px);
-}
-#add-friend-tab #search-bar #search-bar-icon {
-  left: 60px;
-}
-
-#add-friend-tab #search-bar #add-friend-back-button {
-  display: inline-block;
-  margin-left: 0;
-  width: 37px;
-  padding: 0;
-  margin-right: 10px;
-}
-
-#add-friend-tab #search-bar #add-friend-back-button img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 15px;
-  margin-top: 2px;
-  vertical-align: top;
+#friend-list .friend-delete-button input {
+    display: none
 }

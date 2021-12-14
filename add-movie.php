@@ -1,3 +1,19 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['logged']) && $_SESSION['admin'] != "t") {
+    header('Location: login-register.php');
+}
+
+require_once "PARTS/connection.php";
+
+$userdata = pg_query($connection, "SELECT * FROM users WHERE username='" . $_SESSION['username'] . "'");
+
+$data = pg_fetch_array($userdata);
+$balance = number_format((float)$data['balance'], 2, '.', '');
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +24,7 @@
 </head>
 
 <body>
+<script>username = "<?php echo $_SESSION['username']?>"</script>
 
     <?php include("PARTS/menu-bar.php"); ?>
     <?php include("PARTS/notification-tab.php"); ?>
@@ -18,12 +35,12 @@
 
         <div id="add-movie-tab">
             <h2>Add Movie</h2>
-            <form action="">
+            <form action="FORMS/add-movie.php" method="post" enctype="multipart/form-data">
                 <div id="info-left-section">
                     <div id="info-image-frame">
                         <img id="info-image" src="" alt="Movie Poster" style="display: none;">
                         <label for="info-image-file" id="info-image-file-frame">
-                            <input accept="image/*" type="file" id="info-image-file" onchange="loadFile(event)">
+                            <input accept="image/*" type="file" name="poster" id="info-image-file" onchange="loadFile(event)" required>
                             <img id="edit-image-icon" src="IMAGES/ICONS/plus-dark.svg" alt="Edit Icon">
                         </label>
                     </div>
@@ -33,54 +50,55 @@
                         <li>PG-13</li>
                         <li>R</li>
                     </ul>
-                    <input id="info-rating" type="text" style="display: none;" value="G">
+                    <input id="info-rating" name="rating" type="text" style="display: none;" value="G" required>
                 </div>
                 <div id="info-right-section">
-                    <input id="movie-name" type="text" placeholder="Movie Name">
-                    <select id="movie-category">
-                        <option value="drama">Action</option>
-                        <option value="comedy">Adventure</option>
-                        <option value="drama">Animation</option>
-                        <option value="comedy">Biography</option>
-                        <option value="drama">Comedy</option>
-                        <option value="comedy">Crime</option>
-                        <option value="drama">Documentary</option>
-                        <option value="comedy">Drama</option>
-                        <option value="drama">Family</option>
-                        <option value="comedy">Fantasy</option>
-                        <option value="drama">Horror</option>
-                        <option value="comedy">Musical</option>
-                        <option value="drama">Mystery</option>
-                        <option value="comedy">Romance</option>
-                        <option value="drama">Sci-Fi</option>
-                        <option value="comedy">Superhero</option>
-                        <option value="drama">Thriller</option>
-                        <option value="comedy">War</option>
-                        <option value="drama">Western</option>
+                    <input id="movie-name" name="title" type="text" placeholder="Movie Title" required>
+                    <select id="movie-category" name="category">
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="animation">Animation</option>
+                        <option value="biography">Biography</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="crime">Crime</option>
+                        <option value="documentary">Documentary</option>
+                        <option value="drama">Drama</option>
+                        <option value="family">Family</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="horror">Horror</option>
+                        <option value="musical">Musical</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="romance">Romance</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="superhero">Superhero</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="war">War</option>
+                        <option value="western">Western</option>
                     </select>
-                    <input id="movie-actors" type="text" placeholder="Lead Actors">
-                    <textarea id="movie-description" name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
+                    <input id="movie-actors" type="text" placeholder="Lead Actors" name="actors" required>
+                    <input id="movie-year" type="text" placeholder="Year" name="year" required>
+                    <textarea id="movie-description" name="description" id="" cols="30" rows="10" placeholder="Description"></textarea>
                     <div id="info-upload-section">
                             <div id="info-price">
-                                <input type="number" value="14.99" max="10000" min="0" placeholder="Price">
+                                <input type="number" step="0.01" max="10000" min="0" placeholder="Price" name="price" required>
                                 <span>€</span>
                             </div>
                             <div id="info-percentage">
-                                <input id="info-percentage-value" type="number" value="40" max="100" min="0" placeholder="Discount">
+                                <input id="info-percentage-value" type="number" max="100" min="0" placeholder="Discount" name="discount">
                                 <span>%</span>
-                                <input type="checkbox">
+                                <input type="checkbox" name="dactive" id="dactive">
                             </div>
                         </div>
                         <div id="info-bottom-section">
                             <label for="info-teaser-file" id="info-teaser-file-frame">
-                                <input accept="video/mp4,video/x-m4v,video/*" type="file" id="info-teaser-file" onchange="loadFile(event)">
+                                <input accept="video/mp4,video/x-m4v,video/*" type="file" id="info-teaser-file" name="teaser" required>
                                 <h3>Upload Teaser</h3>
                             </label>
                             <label for="info-movie-file" id="info-movie-file-frame">
-                                <input accept="video/mp4,video/x-m4v,video/*" type="file" id="info-movie-file" onchange="loadFile(event)">
+                                <input accept="video/mp4,video/x-m4v,video/*" type="file" id="info-movie-file" name="movie" required>
                                 <h3>Upload Movie</h3>
                             </label>
-                            <input id="info-button" type="submit" value="Save">
+                            <input id="info-button" type="submit" name="save" value="Save">
                         </div>
                 </div>
             </form>

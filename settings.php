@@ -1,3 +1,27 @@
+<?php
+session_start();
+
+if ((!isset($_SESSION['logged']))) {
+    header('Location: login-register.php');
+}
+
+require_once "PARTS/connection.php";
+
+$userdata = pg_query($connection, "SELECT * FROM users WHERE username='" . $_SESSION['username'] . "'");
+$data = pg_fetch_array($userdata);
+
+$picture = $data['picture'];
+$name = $data['name'];
+$username = $data['username'];
+$email = $data['email'];
+$phone = $data['phone'];
+$gender = $data['gender'];
+$country = $data['country'];
+$balance = number_format((float)$data['balance'], 2, '.', '');
+$private = $data['private_profile'];
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +32,7 @@
 </head>
 
 <body>
+<script>username = "<?php echo $_SESSION['username']?>"</script>
 
     <?php include("PARTS/menu-bar.php"); ?>
     <?php include("PARTS/notification-tab.php"); ?>
@@ -23,67 +48,111 @@
         </ul>
 
         <div id="settings">
-            <form action="" id="settings-profile">
+            <form action="FORMS/edit-profile.php" method="post" enctype="multipart/form-data" id="settings-profile">
                 <h2>Edit Profile</h2>
 
                 <label>Profile Picture</label>
                 <label id="form-picture-button" for="form-picture">
-                    <input type="file" id="form-picture" value="Guilherme Costa">
+                    <input type="text" name="hiddenPicture" value="<?php echo $picture ?>" style="display:none;">
+                    <input type="file" name="picture" id="form-picture">
                     <h4>Upload New Picture</h4>
                 </label>
 
                 <label for="form-name">Name</label>
-                <input type="text" id="form-name" value="Guilherme Costa">
+                <input type="text" id="form-name" value="<?php echo $name ?>" name="name" required>
 
                 <label for="form-name">Username</label>
-                <input type="text" id="form-username" value="guishore">
+                <input type="text" id="form-username" value="<?php echo $username ?>" name="username" required>
 
                 <label for="form-name">Email</label>
-                <input type="email" id="form-email" value="guilhermepmcosta@gmail.com">
+                <input type="email" id="form-email" value="<?php echo $email ?>" name="email" required>
                 
                 <label for="form-name">Phone</label>
-                <input type="tel" id="form-phone" pattern="[0-9]{9}" value="912345678">
+                <input type="tel" id="form-phone" value="<?php echo $phone ?>" name="phone" required>
                 
                 <label for="form-name">Gender</label>
-                <select id="form-gender" value="Guilherme Costa">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="non-binary">Non-Binary</option>
-                    <option value="prefer-not-to-say">Prefer not to say</option>
+                <select id="form-gender" name="gender">
+                    <option id="male" value="male">Male</option>
+                    <option id="female" value="female">Female</option>
+                    <option id="non-binary" value="non-binary">Non-Binary</option>
+                    <option id="prefer-not-to-say" value="prefer-not-to-say">Prefer not to say</option>
                 </select>
 
-                <label for="form-name">Country</label>
-                <input type="text" id="form-country" value="Portugal">
+                <label for="form-country">Country</label>
+                <select type="text" id="form-country" value="Portugal" name="country" required>
+                    <?php include('PARTS/country-list.php') ?>
+                </select>
 
-                <input type="submit" name="" id="form-profile-submit" value="Save Changes">
+                <?php
+                echo '
+                    
+                    <script>
+                        $("#form-gender option[value='.$ap.$data['gender'].$ap.']").prop("selected", true);
+                        $("#form-country option[value='.$ap.$data['country'].$ap.']").prop("selected", true);
+                    </script>
+                    
+                    ';
+                ?>
+
+                <input type="submit" name="save" id="form-profile-submit" value="Save Changes">
             </form>
 
-            <form action="" id="settings-password">
+            <form action="FORMS/change-password.php" method="post" id="settings-password">
                 <h2>Change Password</h2>
 
                 <label for="form-old-password">Old Password</label>
-                <input type="password" id="form-old-password">
+                <input type="password" id="form-old-password" name="old_password" required>
 
                 <label for="form-new-password">New Password</label>
-                <input type="password" id="form-new-password">
+                <input type="password" id="form-new-password" name="new_password" required>
 
                 <label for="form-confirm-new-password">Confirm New Password</label>
-                <input type="password" id="form-confirm-new-password">
+                <input type="password" id="form-confirm-new-password" name="confirm_password" required>
 
-                <input type="submit" name="" id="form-password-submit" value="Save Changes">
+                <input type="submit" name="save" id="form-password-submit" value="Save Changes">
             </form>
 
-            <form action="" id="settings-privacy">
+            <form action="FORMS/privacy-settings.php" method="post" id="settings-privacy">
                 <h2>Privacy & Security</h2>
 
-                <label for="form-search">Hide profile on search results</label>
-                <input type="checkbox" id="form-search">
+                <label for="form-search">Private Profile</label>
+                <div>
+                <input type="checkbox" id="form-search" name="private">
+                <p>(This will disable people from being able to following you)</p>
+                </div>
 
                 <label for="form-info">Hide watch info</label>
-                <input type="checkbox" id="form-info">
-                <p>(This will only apply for 6 hours)</p>
+                <div>
+                    <input type="checkbox" id="form-info" name="hide_info">
+                    <p>(This will hide your watch history for 6 hours)</p>
+                </div>
 
-                <input type="submit" name="" id="form-privacy-submit" value="Save Changes">
+
+
+                <?php
+
+                if (isset($data['hide_watch_info'])) {
+                    $t1 = strtotime(date("Y-m-d H:i:s"));
+                    $t2 = strtotime($data['hide_watch_info']);
+                    $diff = $t1 - $t2;
+                    $hideinfo = round($diff / (60 * 60));
+                } else {
+                    $hideinfo = 12;
+                }
+
+                echo '<script>';
+                if($data['private_profile'] == "t"){
+                    echo '$("#form-search").prop("checked", true);';
+                };
+                if($hideinfo < 6){
+                    echo '$("#form-info").prop("checked", true);';
+                }
+                echo'</script>
+                    
+                    ';
+                ?>
+
+                <input type="submit" name="save" id="form-privacy-submit" value="Save Changes">
             </form>
         </div>
 

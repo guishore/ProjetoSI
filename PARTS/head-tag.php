@@ -9,6 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-<link rel="icon" href="IMAGES/ICONS/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../IMAGES/ICONS/favicon.svg" type="image/svg+xml">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>

@@ -1,15 +1,11 @@
 $(".card-medium")
   .mouseenter(function () {
-    if ($("body").hasClass("home")) {
       $(this).children(".card-medium-video").get(0).currentTime = 0;
       $(this).children(".card-medium-video").get(0).play();
       $(this).children(".card-medium-video").css({ opacity: 1 });
-    }
   })
   .mouseleave(function () {
-    if ($("body").hasClass("home")) {
       $(this).children(".card-medium-video").css({ opacity: 0 });
-    }
   });
 
 $(".card-medium-video").on("ended", function () {

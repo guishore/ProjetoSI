@@ -7,16 +7,18 @@ $("#movie-player")
       $("#movie-player button").css({ opacity: 0 });
   });
 
-function moviePlayerEnter() {
+function moviePlayerEnter(id) {
   $("#movie-player").css({ top: 0 });
   $(".card-large-bottom").css({ bottom: "-100%" });
   $("#movie-player video").get(0).play();
+  startWatching(id);
 }
 
 function moviePlayerLeave() {
   $("#movie-player video").get(0).pause();
   $("#movie-player").css({ top: "100%" });
   $(".card-large-bottom").css({ bottom: 0 });
+  stopWatching(username);
 }
 
 $("#movie-player video").on("ended", function () {

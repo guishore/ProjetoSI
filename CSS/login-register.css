@@ -1,68 +1,111 @@
 .main-tab {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 200px;
-  width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    width: 450px;
 }
 
 #register-tab {
-  display: none;
-  margin-top: 100px;
+    display: none;
+    margin-top: 100px;
 }
 
 .main-tab h1 {
-  font-size: 46px;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+    font-size: 46px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .main-tab .top-section {
-  padding: 50px;
-  background: #313131;
-  border-radius: 25px;
-  margin-bottom: 30px;
+    padding: 50px;
+    background: #313131;
+    border-radius: 25px;
+    margin-bottom: 30px;
 }
 
 .main-tab .bottom-section {
-  padding: 40px;
-  background: #313131;
-  border-radius: 25px;
+    padding: 40px;
+    background: #313131;
+    border-radius: 25px;
 }
 
-.main-tab .top-section input {
-  width: 100%;
-  padding: 0px 20px;
-  height: 35px;
-  background: #191919;
-  border: 0;
-  color: white;
-  text-transform: uppercase;
-  font-family: "Rubik", sans-serif;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  text-align: center;
+.main-tab .top-section h4 {
+    margin: 0;
+    color: #E94C4C;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.main-tab .top-section input,
+.main-tab .top-section select {
+    width: calc(100% - 40px);
+    padding: 0px 20px;
+    height: 35px;
+    background: #191919;
+    border: 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main-tab .top-section select {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.main-tab .top-section #profile-picture {
+    display: none;
+}
+
+.main-tab .top-section #profile-picture-frame {
+    width: 100%;
+    height: 35px;
+    display: block;
+    background: #191919;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main-tab .top-section #profile-picture-frame h3 {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-top: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .main-tab .top-section input[type="submit"] {
-  color: #191919;
-  background: white;
-  cursor: pointer;
+    color: #191919;
+    background: white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .main-tab .bottom-section h2 {
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
+
 .main-tab .bottom-section button {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }

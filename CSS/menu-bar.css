@@ -75,7 +75,8 @@
   font-size: 14px;
   font-weight: 500;
   color: #1e1e1e;
-  width: 65px;
+  width: fit-content;
+  padding: 0 8px;
   height: 25px;
   line-height: 25px;
   text-align: center;

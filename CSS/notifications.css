@@ -1,55 +1,64 @@
 #notification-tab {
-  position: fixed;
-  background: rgba(30, 30, 30, 0.5);
-  backdrop-filter: blur(30px);
-  box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  z-index: 3;
-  width: 350px;
-  bottom: 130px;
-  left: 120px;
-  margin: 0;
-  padding: 40px;
-  list-style: none;
-  text-transform: uppercase;
-  color: white;
-  display: none;
-  max-height: 500px;
-  overflow-y: scroll;
+    position: fixed;
+    background: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    z-index: 3;
+    width: 350px;
+    bottom: 130px;
+    left: 120px;
+    margin: 0;
+    padding: 40px;
+    list-style: none;
+    text-transform: uppercase;
+    color: white;
+    display: none;
+    max-height: 400px;
+    overflow-y: scroll;
 }
 
 #notification-tab::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 #notification-tab h2 {
-  font-size: 20px;
-  margin: 0;
+    font-size: 20px;
+    margin: 0;
 }
 
 #notification-tab li {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .notification-top-line {
-  font-size: 0;
+    font-size: 0;
 }
 
 .notification-top-line .notification-title {
-  display: inline-block;
-  width: 70%;
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 5px;
+    display: inline-block;
+    width: 70%;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .notification-top-line .notification-date {
-  display: inline-block;
-  width: 30%;
-  text-align: right;
-  font-size: 12px;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    font-size: 12px;
 }
 
 .notification-description {
-  font-size: 12px;
+    font-size: 12px;
+}
+
+.notification-top-line .notification-title .new-notif {
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 100%;
+    background: #e94c4c
 }

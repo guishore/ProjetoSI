@@ -85,3 +85,13 @@
 #search-bar #rating-list li:hover {
   background: lightgray;
 }
+
+#search-bar .order-button{
+  background: grey;
+  color: #191919;
+  padding: 7px 25px;
+}
+
+#search-bar .order-active {
+  background: white;
+}

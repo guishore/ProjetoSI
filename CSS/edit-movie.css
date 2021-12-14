@@ -1,0 +1,357 @@
+#primary-area {
+    font-size: 0;
+}
+
+#main-tab {
+    width: 100%;
+    height: calc(100vh - 84px - 120px);
+}
+
+#main-tab h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#edit-tab {
+    width: calc(66% - 100px);
+    display: inline-block;
+    background-color: #313131;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
+    height: calc(100% - 100px);
+}
+
+#edit-right-section {
+    width: 32%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+#comments-tab,
+#stats-tab {
+    background-color: #313131;
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+#comments-tab {
+    width: calc(100% - 100px);
+    height: calc(100% - 50px);
+    padding-bottom: 0;
+}
+
+#stats-tab {
+    margin-top: 30px;
+    height: calc(50% - 15px);
+    width: 100%;
+    padding: 0;
+}
+
+#stats-tab h2 {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/*=========================*/
+
+#edit-tab form {
+    width: 100%;
+    height: calc(100% - 24.55px - 20px);
+    font-size: 0;
+}
+
+#edit-tab form #info-left-section {
+    width: 40%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+#edit-tab form #info-right-section {
+    width: 58%;
+    height: 100%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#edit-tab form #info-left-section #info-image-frame {
+    width: 100%;
+    height: calc(100% - 45px);
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+#edit-tab form #info-left-section #info-image-frame img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+}
+
+#edit-tab form #info-left-section #info-image-frame #info-image-file-frame {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #191919;
+    background: white;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0;
+    cursor: pointer;
+}
+
+#edit-tab form #info-left-section #info-image-frame #info-image-file-frame img {
+    object-fit: fill;
+    display: block;
+    width: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#edit-tab form #info-right-section #info-teaser-file-frame,
+#edit-tab form #info-right-section #info-movie-file-frame,
+#edit-tab form #info-right-section #info-button {
+    text-align: center;
+    width: 32%;
+    display: inline-block;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 0;
+    vertical-align: top;
+}
+
+#edit-tab form #info-right-section #info-teaser-file-frame,
+#edit-tab form #info-right-section #info-movie-file-frame {
+    background-color: #191919;
+}
+
+#edit-tab form #info-right-section #info-movie-file-frame {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#edit-tab form #info-right-section #info-teaser-file-frame h3,
+#edit-tab form #info-right-section #info-movie-file-frame h3 {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#edit-tab form #info-left-section #info-image-frame #info-image-file,
+#edit-tab form #info-right-section #info-teaser-file,
+#edit-tab form #info-right-section #info-movie-file {
+    display: none;
+}
+
+#edit-tab form #info-left-section #ratings {
+    height: 25px;
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style: none;
+}
+
+#edit-tab form #info-left-section #ratings li {
+    font-size: 14px;
+    display: inline-block;
+    color: grey;
+    margin: 0 3px;
+    background: #191919;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+#edit-tab form #info-right-section * {
+    margin-top: 10px;
+}
+
+#edit-tab form #info-right-section input:first-child {
+    margin: 0;
+}
+
+#edit-tab form #info-right-section input,
+#edit-tab form #info-right-section select,
+#edit-tab form #info-right-section #info-bottom-section {
+    height: 35px;
+}
+
+#edit-tab form #info-right-section input,
+#edit-tab form #info-right-section textarea {
+    resize: none;
+    background: #191919;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    color: white;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+}
+
+#edit-tab form #info-right-section select {
+    resize: none;
+    background: #191919;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 20px;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    cursor: pointer;
+}
+
+#edit-tab form #info-right-section textarea {
+    height: calc(100% - 225px - 40px - 45px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#edit-tab form #info-right-section #info-percentage,
+#edit-tab form #info-right-section #info-price {
+    margin-top: 0;
+    margin-left: 2%;
+    width: 49%;
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+#edit-tab form #info-right-section #info-price {
+    text-align: center;
+    margin-left: 0;
+}
+
+#edit-tab form #info-right-section #info-percentage input[type="checkbox"] {
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+#edit-tab form #info-right-section #info-price input {
+    text-align: center;
+    padding-right: 40px;
+    width: calc(100% - 60px);
+}
+
+#edit-tab form #info-right-section #info-percentage input {
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: calc(100% - 80px);
+    color: grey;
+}
+
+#edit-tab form #info-right-section #info-button {
+    color: #191919;
+    background: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#edit-tab form #info-right-section #info-price span,
+#edit-tab form #info-right-section #info-percentage span {
+    position: absolute;
+    font-size: 14px;
+    top: -1px;
+    right: 15px;
+    color: gray;
+}
+
+/*=======================*/
+
+#comments-tab ul {
+    padding: 0;
+    margin: 0;
+    color: white;
+    overflow-y: scroll;
+    height: calc(100% - 24.55px - 20px);
+}
+
+#comments-tab ul::-webkit-scrollbar {
+    width: 0;
+}
+
+#comments-tab ul li {
+    position: relative;
+}
+
+#comments-tab ul li:last-child {
+    margin-bottom: 50px;
+}
+
+#comments-tab ul li h3 {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#comments-tab ul li .comment-top-line p {
+    display: inline-block;
+    margin-left: 10px;
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+#comments-tab ul li p {
+    font-size: 12px;
+    margin: 0;
+    text-align: justify;
+    width: 82%;
+    margin-bottom: 20px;
+}
+
+#comments-tab .comment-delete-button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+#comments-tab .comment-delete-button input {
+    display: none
+}
+
+#comments-tab .comment-delete-button img {
+    width: 13px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8px;
+}
